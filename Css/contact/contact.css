@@ -1,0 +1,21 @@
+.contact {
+  grid-area: contact;
+  margin-bottom: 3rem;
+}
+.contact .contact__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact .contact__content p {
+  padding: 1rem;
+}
+.contact .contact__content .contact__icons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.contact .contact__content .contact__icons img:hover {
+  transition: 1s;
+  transform: scale(1.2);
+}/*# sourceMappingURL=contact.css.map */

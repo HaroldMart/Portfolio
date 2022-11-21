@@ -1,0 +1,25 @@
+.about {
+  grid-area: about;
+  display: grid;
+  gap: 2rem;
+  padding: 0 4rem;
+  grid-template-columns: 1fr 1fr;
+
+  ul {
+    padding: 1rem;
+  }
+
+  .about__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__image img {
+    width: 100%;
+
+    &:hover {
+      transition: all 700ms;
+      transform: scale(0.95);
+    }
+  }
+}

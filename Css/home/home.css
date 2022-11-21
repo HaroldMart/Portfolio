@@ -1,0 +1,37 @@
+.home {
+  grid-area: home;
+  display: grid;
+  color: white;
+  align-items: center;
+  row-gap: 4rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.home .home__content {
+  margin: o auto;
+}
+.home .home__content .home__title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 55px;
+}
+.home .home__content .home__title:hover {
+  transition: all 700ms;
+  translate: 9px;
+  color: #0ddbee;
+}
+.home p:hover {
+  transition: all 700ms;
+  translate: 9px;
+  color: #0ddbee;
+}
+.home .home__image {
+  display: flex;
+  justify-content: flex-end;
+}
+.home .home__image img {
+  width: 70%;
+}
+.home .home__image img:hover {
+  transition: all 700ms;
+  transform: scale(0.95);
+}/*# sourceMappingURL=home.css.map */

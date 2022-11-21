@@ -1,0 +1,44 @@
+.home {
+  grid-area: home;
+  display: grid;
+  color: white;
+  align-items: center;
+  row-gap: 4rem;
+  grid-template-columns: repeat(2, 1fr);
+
+  .home__content {
+    margin: o auto;
+
+    .home__title {
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 55px;
+
+      &:hover {
+        transition: all 700ms;
+        translate: 9px;
+        color: $blueColor;
+      }
+    }
+  }
+
+  p:hover {
+    transition: all 700ms;
+    translate: 9px;
+    color: $blueColor;
+  }
+
+  .home__image {
+    display: flex;
+    justify-content: flex-end;
+   
+    img {
+      width: 70%;
+
+      &:hover {
+        transition: all 700ms;
+        transform: scale(0.95);
+      }
+    }
+  }
+}

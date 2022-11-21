@@ -1,0 +1,22 @@
+.projects {
+  grid-area: projects;
+
+  .projects__content {
+    display: grid;
+    margin-top: 5rem;
+    gap: 2rem;
+    padding: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+
+    .content__project {
+      background-color: red;
+      border-radius: 20px;
+      display: flex;
+      height: 300px;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 10px;
+      box-shadow: black 3px 3px 5px;
+    }
+  }
+}
