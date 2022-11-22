@@ -34,7 +34,7 @@ section[id] {
 .main {
   display: grid;
   width: 90%;
-  row-gap: 8rem;
+  row-gap: 7rem;
   margin: 0 auto;
   grid-template-areas: "home" "about" "studies" "technologies " "projects" "contact";
 }
@@ -72,10 +72,7 @@ section[id] {
   .about {
     grid-template-columns: 1fr;
   }
-  .about__image {
-    display: none;
-  }
-  .home__content {
+  .home__content, .about__content {
     text-align: center;
   }
 }
@@ -87,5 +84,10 @@ section[id] {
 @media (max-width: 622px) {
   .ico2, .ico3 {
     display: none;
+  }
+}
+@media (max-width: 400px) {
+  .main {
+    width: 97%;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -6,12 +6,16 @@
   grid-template-columns: 1fr 1fr;
 
   ul {
-    padding: 1rem;
+    padding: 1rem 0;
   }
 
   .about__content {
     display: flex;
     flex-direction: column;
+
+    h3 {
+      margin: 0;
+    }
   }
 
   .about__image img {

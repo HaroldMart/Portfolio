@@ -38,7 +38,7 @@ section[id] {
 .main {
     display: grid;
     width: 90%;
-    row-gap: 8rem;
+    row-gap: 7rem;
     margin: 0 auto;
     grid-template-areas:
                   'home' 
@@ -90,11 +90,7 @@ section[id] {
         grid-template-columns: 1fr;
     }
 
-    .about__image {
-        display: none;
-    }
-
-    .home__content {
+    .home__content, .about__content {
         text-align: center;
     }
 
@@ -110,5 +106,12 @@ section[id] {
     .ico2, .ico3 {
         display: none;
     }
+}
+
+@media (max-width:400px) {
+    .main {
+        width: 97%;
+    }
+    
 }
 

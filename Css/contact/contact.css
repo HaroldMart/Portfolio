@@ -12,6 +12,7 @@
 }
 .contact .contact__content .contact__icons {
   display: flex;
+  margin-top: 3rem;
   align-items: center;
   gap: 2rem;
 }
