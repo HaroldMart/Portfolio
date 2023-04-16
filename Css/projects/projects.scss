@@ -9,14 +9,61 @@
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 
     .content__project {
-      background-color: red;
-      border-radius: 20px;
+      border-radius: 10px;
       display: flex;
-      height: 300px;
+      background-color: #ffffff;
+      color: black;
       flex-direction: column;
+      overflow: hidden;
       justify-content: flex-end;
-      padding: 10px;
-      box-shadow: black 3px 3px 5px;
+      box-shadow: 3px 3px 4px 2px black;
+      position: relative;
+
+      &:hover {
+        transition: 400ms;
+        transform: scale(1.04);
+
+        .see_more {
+          transform: translateY(0);
+        }
+      }
+
+      .project_btn{
+        width: 95%;
+        display: flex;
+        position: absolute;
+        justify-content: flex-end;
+        gap: 20px;
+        z-index: 2;
+          
+          i {
+            font-size: 25px;
+            color: rgb(0, 0, 0);
+
+            &:hover{
+              transition: 400ms;
+              transform: scale(1.06);
+            }
+          }
+      }
+
+      .project_info{
+        padding: 10px;
+        position: relative;
+
+        p{
+          line-height: 25px;
+        }
+      }
+
+      .content__project_image {
+        width: 100%;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
     }
   }
 }
