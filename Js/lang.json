@@ -8,6 +8,7 @@
        "link_contacts": "Contactos",
        "home-text":"Soy programador, apasionado sobre la programación y el desarrollo web, ven y mira lo que puedo hacer.",
        "h3_about": "Sobre mi",
+       "h3_projects": "Proyectos",
        "li_about_learning": "Estoy aprendiendo Desarrollo Full-Stack",
        "li_about_languages": "Idiomas: Español (Nativo), Inglés (B1)",
        "li_about_live": "Vivo en República Dominicana, Santo Domingo",
@@ -24,7 +25,9 @@
        "p_studies4": "Estoy reforzando mis conocimientos en desarrollo web en la página de Free Code Camp para poder usar herramientas web como javascript de manera más eficiente y hacer páginas de una mejor manera con más funciones.",
        "h3_technologies": "Tecnologías",
        "h3_contact": "Habla conmigo!",
-       "p_contact": "¿Quieres contactarme? Puedes enviarme un mensaje..."
+       "p_contact": "¿Quieres contactarme? Puedes enviarme un mensaje...",
+       "project_name1": "Gestion de Empleados",
+       "project_description1": "En este proyecto utilice tecnologias como PHP para realizar una pagina que me permitiera guardar datos de empleados de una empresa, estos datos los guarda en una carpeta que esta en el proyecto."
     },
     "en":{
         "text-curriculum": "Resume",
@@ -35,6 +38,7 @@
         "link_contacts": "Contacts",
         "home-text":"I'm Software Developer, passionate about programming and web development, come and check what I can do.",
         "h3_about": "About me",
+        "h3_projects": "Projects",
         "li_about_learning": "I'm learning Full-Stack Development",
         "li_about_languages": "Languages: Spanish (Native), English (B1)",
         "li_about_live": "I live in Dominican Republic, Santo Domingo",
@@ -51,6 +55,8 @@
         "p_studies4": "I'm reinforcing my knowledge in web development on the Free Code Camp page so that I can use web tools like javascript more efficiently and make pages in a better way with more features.",
         "h3_technologies": "Technologies",
         "h3_contact": "Talk with Me!",
-        "p_contact": "Do you want to contact me ? You can send me a message..."
+        "p_contact": "Do you want to contact me ? You can send me a message...",
+        "project_name1": "Employee Management",
+       "project_description1": "In this project I used technologies such as PHP to make a page that would allow me to save data from employees of a company, this data is saved in a folder that is in the project."
     }
   }

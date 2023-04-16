@@ -2,11 +2,14 @@ let divProjects = document.getElementById("projects__content");
 const works = [
   {
     image: "images/controlEmpleadosImage.png",
-    name: "Control de Empleados",
+    name: "Gestion de Empleados",
     description: "En este proyecto utilice tecnologias como PHP para realizar una pagina que me permitiera guardar datos de empleados de una empresa, estos datos los guarda en una carpeta que esta en el proyecto.",
     techs: "HTML, CSS, PHP",
     host: "https://controlempleados098.000webhostapp.com/index.php",
     code_link: "https://github.com/HaroldMart/ControlDeEmpleados",
+    key_lang_name: "project_name1",
+    key_lang_description: "project_description1",
+    key_lang_techs: "link_technologies1",
   },
 ];
 
@@ -45,9 +48,9 @@ works.forEach((project) => {
         <a href='${project.code_link}' target="_blank"><i class="fi fi-rs-rectangle-code"></i></a>
       </div>
       <div class='project_info'>
-        <h3>${project.name}</h3>
-        <p>${project.description}</p>
-        <p><b>Tecnologias: </b> ${project.techs}</p>
+        <h3 class="lang" key="${project.key_lang_name}">${project.name}</h3>
+        <p class="lang" key="${project.key_lang_description}">${project.description}</p>
+        <p><b class="lang" key="${project.key_lang_techs}">Tecnologías: </b> ${project.techs}</p>
       </div>
   `;
 
