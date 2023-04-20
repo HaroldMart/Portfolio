@@ -16,6 +16,9 @@
   align-items: center;
   gap: 2rem;
 }
+.contact .contact__content .contact__icons img {
+  transition: 1s;
+}
 .contact .contact__content .contact__icons img:hover {
   transition: 1s;
   transform: scale(1.2);

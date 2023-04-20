@@ -20,12 +20,7 @@
       position: relative;
 
       &:hover {
-        transition: 400ms;
         transform: scale(1.04);
-
-        .see_more {
-          transform: translateY(0);
-        }
       }
 
       .project_btn{

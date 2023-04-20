@@ -13,8 +13,8 @@
   display: flex;
   text-align: center;
   flex-direction: column;
+  transition: all 700ms;
 }
 .technologies .tech_icon:hover {
-  transition: all 700ms;
   transform: scale(0.9);
 }/*# sourceMappingURL=technologies.css.map */

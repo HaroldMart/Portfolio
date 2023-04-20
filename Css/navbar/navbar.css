@@ -16,7 +16,6 @@
   display: grid;
   justify-content: space-between;
   align-items: center;
-  grid-template-columns: repeat(2, -webkit-max-content);
   grid-template-columns: repeat(2, max-content);
 }
 
@@ -31,9 +30,9 @@
   display: flex;
   gap: 1rem;
   align-items: center;
+  transition: all 700ms;
 }
 .resume:hover {
-  transition: all 1.3s;
   translate: 6px;
 }
 .resume:hover a {
@@ -85,8 +84,8 @@
   text-decoration: none;
   font-size: 1.2rem;
   letter-spacing: 2px;
+  transition: all 700ms;
 }
 .nav__link:hover {
-  transition: all 1.3s;
   color: #0ddbee;
 }/*# sourceMappingURL=navbar.css.map */

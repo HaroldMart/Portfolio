@@ -20,9 +20,9 @@
 
   .about__image img {
     width: 100%;
+    transition: all 700ms;
 
     &:hover {
-      transition: all 700ms;
       transform: scale(0.95);
     }
   }

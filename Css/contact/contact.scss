@@ -17,9 +17,13 @@
       align-items: center;
       gap: 2rem;
 
-      img:hover {
+      img {
         transition: 1s;
-        transform: scale(1.2);
+
+        &:hover {
+          transition: 1s;
+          transform: scale(1.2);
+        }
       }
     }
   }

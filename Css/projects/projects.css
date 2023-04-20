@@ -20,11 +20,7 @@
   position: relative;
 }
 .projects .projects__content .content__project:hover {
-  transition: 400ms;
   transform: scale(1.04);
-}
-.projects .projects__content .content__project:hover .see_more {
-  transform: translateY(0);
 }
 .projects .projects__content .content__project .project_btn {
   width: 95%;

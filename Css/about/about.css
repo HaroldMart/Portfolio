@@ -17,8 +17,8 @@
 }
 .about .about__image img {
   width: 100%;
+  transition: all 700ms;
 }
 .about .about__image img:hover {
-  transition: all 700ms;
   transform: scale(0.95);
 }/*# sourceMappingURL=about.css.map */

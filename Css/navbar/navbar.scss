@@ -1,13 +1,10 @@
 .container {
   margin: 0 auto;
   width: 90%;
-  // max-width: 1200px;
   overflow: hidden;
 }
 
 .hero {
-  // min-height: 500px;
-  // height: 100vh;
   color: #fff;
 }
 
@@ -34,14 +31,14 @@
   display: flex;
   gap: 1rem;
   align-items: center;
+  transition: all 700ms;
 
   &:hover {
-    transition: all 1.3s;
     translate: 6px;
-
-    a {
+    
+     a {
       color: #0ddbee;
-    }
+     }
   }
 }
 
@@ -90,9 +87,9 @@
   text-decoration: none;
   font-size: 1.2rem;
   letter-spacing: 2px;
+  transition: all 700ms;
 
   &:hover {
-    transition: all 700ms;
-    color: $blueColor;
+    color: #0ddbee;
   }
 }
