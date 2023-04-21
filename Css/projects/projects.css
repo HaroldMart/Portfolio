@@ -15,28 +15,12 @@
   color: black;
   flex-direction: column;
   overflow: hidden;
-  justify-content: flex-end;
+  justify-content: space-between;
   box-shadow: 3px 3px 4px 2px black;
   position: relative;
 }
 .projects .projects__content .content__project:hover {
   transform: scale(1.04);
-}
-.projects .projects__content .content__project .project_btn {
-  width: 95%;
-  display: flex;
-  position: absolute;
-  justify-content: flex-end;
-  gap: 20px;
-  z-index: 2;
-}
-.projects .projects__content .content__project .project_btn i {
-  font-size: 25px;
-  color: rgb(0, 0, 0);
-}
-.projects .projects__content .content__project .project_btn i:hover {
-  transition: 400ms;
-  transform: scale(1.06);
 }
 .projects .projects__content .content__project .project_info {
   padding: 10px;
@@ -51,4 +35,18 @@
 .projects .projects__content .content__project .content__project_image img {
   width: 100%;
   height: 100%;
+}
+.projects .projects__content .content__project .project_btn {
+  width: 95%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.projects .projects__content .content__project .project_btn i {
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+}
+.projects .projects__content .content__project .project_btn i:hover {
+  transition: 400ms;
+  transform: scale(1.06);
 }/*# sourceMappingURL=projects.css.map */

@@ -2,15 +2,19 @@ let divProjects = document.getElementById("projects__content");
 const works = [
   {
     image: "images/controlEmpleadosImage.png",
-    name: "Gestion de Empleados",
-    description: "En este proyecto utilice tecnologias como PHP para realizar una pagina que me permitiera guardar datos de empleados de una empresa, estos datos los guarda en una carpeta que esta en el proyecto.",
+    name: "Employee Management",
     techs: "HTML, CSS, PHP",
     host: "https://controlempleados098.000webhostapp.com/index.php",
     code_link: "https://github.com/HaroldMart/ControlDeEmpleados",
-    key_lang_name: "project_name1",
-    key_lang_description: "project_description1",
-    key_lang_techs: "link_technologies1",
-  },
+    key_lang_description: "employeeManagementDescription",
+  }, {
+    image: "images/contackBook_Image.png",
+    name: "Contact Book",
+    techs: "HTML, CSS, JS",
+    host: "https://contactagenda.netlify.app/",
+    code_link: "https://github.com/HaroldMart/Agenda-de-Contactos-",
+    key_lang_description: "contactBookDescription",
+  }
 ];
 
 AOS.init({ duration: 1300 });
@@ -43,15 +47,16 @@ works.forEach((project) => {
       <picture class="content__project_image">
         <img src="${project.image}" alt="" />
       </picture>
-      <div class='project_btn'>
-        <a href='${project.host}' target="_blank"><i class="fi fi-sr-globe"></i></a>
-        <a href='${project.code_link}' target="_blank"><i class="fi fi-rs-rectangle-code"></i></a>
-      </div>
+     
       <div class='project_info'>
-        <h3 class="lang" key="${project.key_lang_name}">${project.name}</h3>
-        <p class="lang" key="${project.key_lang_description}">${project.description}</p>
-        <p><b class="lang" key="${project.key_lang_techs}">Tecnologías: </b> ${project.techs}</p>
+        <h3>${project.name}</h3>
+        <p class="lang" key="${project.key_lang_description}"></p>
+        <p><b class="lang" key="link_technologies"></b>: ${project.techs}</p>
       </div>
+      <div class='project_btn'>
+      <a href='${project.host}' target="_blank"><i class="fi fi-sr-globe"></i></a>
+      <a href='${project.code_link}' target="_blank"><i class="fi fi-rs-rectangle-code"></i></a>
+    </div>
   `;
 
   divProjects.appendChild(div);
