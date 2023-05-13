@@ -9,6 +9,11 @@
 }
 .contact .contact__content p {
   padding: 1rem;
+  transition: all 1s;
+}
+.contact .contact__content p:hover {
+  translate: 9px;
+  color: #0ddbee;
 }
 .contact .contact__content .contact__icons {
   display: flex;

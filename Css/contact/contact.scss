@@ -9,6 +9,12 @@
 
     p {
       padding: 1rem;
+      transition: all 1s;
+
+      &:hover {
+          translate: 9px;
+          color: #0ddbee;
+        }
     }
 
     .contact__icons {

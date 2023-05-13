@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 $blueColor: #13b4c3;
-$backgroundBody: -webkit-linear-gradient(left, #104a51, #141937 65%); 
+$backgroundBody: -webkit-linear-gradient(left, #0d484d, #131a3f 65%); 
 
 html {
     background-color: #141937;
@@ -29,6 +29,12 @@ li {
 
 h3 {
     font-size: 30px;
+    transition: all 1s;
+
+      &:hover {
+          translate: 9px;
+          color: #0ddbee;
+        }
 }
 
 button {
