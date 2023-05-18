@@ -4,7 +4,7 @@ const works = [
     image: "images/controlEmpleadosImage.png",
     name: "Employee Management",
     techs: "HTML, CSS, PHP",
-    host: "https://controlempleados098.000webhostapp.com/index.php",
+    host: "", // https://controlempleados098.000webhostapp.com/index.php
     code_link: "https://github.com/HaroldMart/ControlDeEmpleados",
     key_lang_description: "employeeManagementDescription",
   }, {
