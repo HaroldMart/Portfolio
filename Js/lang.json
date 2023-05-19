@@ -27,7 +27,8 @@
        "h3_contact": "Habla conmigo!",
        "p_contact": "¿Quieres contactarme? Puedes enviarme un mensaje...",
        "employeeManagementDescription": "En este proyecto utilice tecnologias como PHP para realizar una pagina que me permitiera guardar datos de empleados de una empresa, estos datos los guarda en una carpeta que esta en el proyecto.",
-       "contactBookDescription" : "En este proyecto utilice HTML, CSS y JS, para guardar contactos con sus respectivos datos en el localStorage del navegador."
+       "contactBookDescription" : "En este proyecto utilice HTML, CSS y JS, para guardar contactos con sus respectivos datos en el localStorage del navegador.",
+       "moviewsOverviewDescription": "Esta es una página simple que recopila una colección de información de películas usando una API llamada TMDB. Permite ver la información básica de la pelicula, como su idioma, su calificación, su fecha de estreno y la cantidad de votos que tiene."
     },
     "en":{
         "text-curriculum": "Resume",
@@ -57,6 +58,7 @@
         "h3_contact": "Talk with Me!",
         "p_contact": "Do you want to contact me ? You can send me a message...",
         "employeeManagementDescription": "In this project I used technologies such as PHP to make a page that would allow me to save data from employees of a company, this data is saved in a folder that is in the project.",
-        "contactBookDescription" : "In this project I use HTML, CSS and JS, to save the contacts with their respective data in the localStorage of the browser."
+        "contactBookDescription" : "In this project I use HTML, CSS and JS, to save the contacts with their respective data in the localStorage of the browser.",
+        "moviewsOverviewDescription": "This is a simple page that collects a collection of movie information using an API called TMDB. It allows you to see the basic information of the movie, such as its language, its rating, its release date and the number of votes it has."
     }
   }

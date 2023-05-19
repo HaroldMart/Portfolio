@@ -3,17 +3,21 @@ const works = [
   {
     image: "images/controlEmpleadosImage.png",
     name: "Employee Management",
-    techs: "HTML, CSS, PHP",
-    host: "", // https://controlempleados098.000webhostapp.com/index.php
+    techs: "HTML, CSS, PHP", 
     code_link: "https://github.com/HaroldMart/ControlDeEmpleados",
     key_lang_description: "employeeManagementDescription",
   }, {
     image: "images/contackBook_Image.png",
     name: "Contact Book",
     techs: "HTML, CSS, JS",
-    host: "https://contactagenda.netlify.app/",
     code_link: "https://github.com/HaroldMart/Agenda-de-Contactos-",
     key_lang_description: "contactBookDescription",
+  }, {
+    image: "images/moviesOverviewImage.png",
+    name: "Movies Overview",
+    techs: "HTML, CSS, JS",
+    code_link: "https://github.com/HaroldMart/MoviesOverview",
+    key_lang_description: "moviewsOverviewDescription",
   }
 ];
 
@@ -54,7 +58,6 @@ works.forEach((project) => {
         <p><b class="lang" key="link_technologies"></b>: ${project.techs}</p>
       </div>
       <div class='project_btn'>
-      <a href='${project.host}' target="_blank"><i class="fi fi-sr-globe"></i></a>
       <a href='${project.code_link}' target="_blank"><i class="fi fi-rs-rectangle-code"></i></a>
     </div>
   `;
