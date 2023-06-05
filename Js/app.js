@@ -24,6 +24,13 @@ const works = [
     techs: "Angular, Expressjs, MongoDB",
     code_link: "https://github.com/HaroldMart/RoadRunners-Backend",
     key_lang_description: "roadRunnersDescription",
+  },
+  {
+    image: "images/pokedex.png",
+    name: "Pokedex",
+    techs: "ASP.NET, SQL Server",
+    code_link: "https://github.com/HaroldMart/Pokedex",
+    key_lang_description: "roadRunnersDescription",
   }
 ];
 
