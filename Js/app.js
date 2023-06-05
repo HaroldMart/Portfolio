@@ -30,7 +30,7 @@ const works = [
     name: "Pokedex",
     techs: "ASP.NET, SQL Server",
     code_link: "https://github.com/HaroldMart/Pokedex",
-    key_lang_description: "roadRunnersDescription",
+    key_lang_description: "pokedexDescription",
   }
 ];
 
