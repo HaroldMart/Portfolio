@@ -28,7 +28,7 @@ const works = [
   {
     image: "images/pokedex.png",
     name: "Pokedex",
-    techs: "ASP.NET, SQL Server",
+    techs: "ASP.NET, SQL Server, Entity framework",
     code_link: "https://github.com/HaroldMart/Pokedex",
     key_lang_description: "pokedexDescription",
   }
