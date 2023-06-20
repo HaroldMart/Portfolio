@@ -53,10 +53,10 @@ section[id] {
   width: 90%;
   row-gap: 7rem;
   margin: 0 auto;
-  grid-template-areas: "home" "about" "studies" "technologies " "projects" "contact";
+  grid-template-areas: "home" "about" "studies" "experiences" "technologies " "projects" "contact";
 }
 
-@media (min-width: 850px) {
+@media (min-width: 960px) {
   .nav {
     --state-hamburguer: scale(0);
     --state-menu: translate(0);
@@ -89,7 +89,8 @@ section[id] {
   .about {
     grid-template-columns: 1fr;
   }
-  .home__content, .about__content {
+  .home__content,
+  .about__content {
     text-align: center;
   }
 }
@@ -99,12 +100,13 @@ section[id] {
   }
 }
 @media (max-width: 622px) {
-  .ico2, .ico3 {
+  .ico2,
+  .ico3 {
     display: none;
   }
 }
 @media (max-width: 400px) {
   .main {
-    width: 97%;
+    width: 98%;
   }
 }/*# sourceMappingURL=style.css.map */

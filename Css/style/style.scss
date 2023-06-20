@@ -1,136 +1,135 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:ital,wght@0,300;0,400;0,500;1,200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:ital,wght@0,300;0,400;0,500;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 $blueColor: #13b4c3;
-$backgroundBody: -webkit-linear-gradient(left, #0d484d, #131a3f 65%); 
+$backgroundBody: -webkit-linear-gradient(left, #0d484d, #131a3f 65%);
 
 html {
-    background-color: #141937;
+  background-color: #141937;
 }
 
 body {
-    background: $backgroundBody;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 32px;
+  background: $backgroundBody;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
 }
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 h3 {
-    font-size: 30px;
-    transition: all 1s;
+  font-size: 30px;
+  transition: all 1s;
 
-      &:hover {
-          translate: 9px;
-          color: #0ddbee;
-        }
+  &:hover {
+    translate: 9px;
+    color: #0ddbee;
+  }
 }
 
 button {
-    color: white;
-    border: 0;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: $blueColor;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: $blueColor;
 
-    &:hover {
-        transition: all 400ms;
-        transform: scale(0.96);
-    }
+  &:hover {
+    transition: all 400ms;
+    transform: scale(0.96);
+  }
 }
 
 section[id] {
-    scroll-margin-top: 180px;
+  scroll-margin-top: 180px;
 }
 
 .main {
-    display: grid;
-    width: 90%;
-    row-gap: 7rem;
-    margin: 0 auto;
-    grid-template-areas:
-                  'home' 
-                  'about' 
-                 'studies' 
-               'technologies ' 
-                 'projects' 
-                 'contact';
-    
+  display: grid;
+  width: 90%;
+  row-gap: 7rem;
+  margin: 0 auto;
+  grid-template-areas:
+    "home"
+    "about"
+    "studies"
+    "experiences"
+    "technologies "
+    "projects"
+    "contact";
 }
 
-@media (min-width: 850px) {
-    .nav {
-      --state-hamburguer: scale(0);
-      --state-menu: translate(0);
-    }
-  
-    .nav:target {
-      --state-close: scale(0);
-    }
-  
-    .nav__links {
-      padding: 0;
-      background-color: unset;
-      position: unset;
-      gap: 1.5em;
-      grid-auto-flow: column;
-      transform: unset;
-      grid-column: -2/-1;
-      grid-row: 1/2;
-    }
-  
-    .nav__link {
-      font-size: 1rem;
-      letter-spacing: none;
+@media (min-width: 960px) {
+  .nav {
+    --state-hamburguer: scale(0);
+    --state-menu: translate(0);
+  }
+
+  .nav:target {
+    --state-close: scale(0);
+  }
+
+  .nav__links {
+    padding: 0;
+    background-color: unset;
+    position: unset;
+    gap: 1.5em;
+    grid-auto-flow: column;
+    transform: unset;
+    grid-column: -2/-1;
+    grid-row: 1/2;
+  }
+
+  .nav__link {
+    font-size: 1rem;
+    letter-spacing: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .home {
+    grid-template-columns: 1fr;
+
+    .home__image {
+      justify-content: center;
     }
   }
 
-@media screen and (max-width: 1200px) {
-    .home {
-        grid-template-columns: 1fr;
+  .about {
+    grid-template-columns: 1fr;
+  }
 
-        .home__image {
-            justify-content: center;
-        }
-    }
-
-    .about {
-        grid-template-columns: 1fr;
-    }
-
-    .home__content, .about__content {
-        text-align: center;
-    }
-
+  .home__content,
+  .about__content {
+    text-align: center;
+  }
 }
 
-@media (max-width:980px) {
-    .studies__content {
-        flex-wrap: wrap;
-    }
+@media (max-width: 980px) {
+  .studies__content {
+    flex-wrap: wrap;
+  }
 }
 
-@media (max-width:622px) {
-    .ico2, .ico3 {
-        display: none;
-    }
+@media (max-width: 622px) {
+  .ico2,
+  .ico3 {
+    display: none;
+  }
 }
 
-@media (max-width:400px) {
-    .main {
-        width: 97%;
-    }
-    
+@media (max-width: 400px) {
+  .main {
+    width: 98%;
+  }
 }
-

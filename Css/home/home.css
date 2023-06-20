@@ -4,6 +4,7 @@
   color: white;
   align-items: center;
   row-gap: 4rem;
+  margin-top: 30px;
   grid-template-columns: repeat(2, 1fr);
 }
 .home .home__content {

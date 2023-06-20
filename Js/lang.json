@@ -4,6 +4,7 @@
        "link_home": "Inicio",
        "link_about": "Sobre mi",
        "link_studies": "Estudios",
+       "link_experience": "Experiencia",
        "link_technologies": "Tecnologías",
        "link_contacts": "Contactos",
        "home_text": "Soy programador, apasionado sobre la programación y el desarrollo web, ven y mira lo que puedo hacer. Vamoooosss!!!",
@@ -31,13 +32,17 @@
        "contactBookDescription" : "En este proyecto utilice HTML, CSS y JS, para guardar contactos con sus respectivos datos en el localStorage del navegador.",
        "moviewsOverviewDescription": "Esta es una página simple que recopila una colección de información de películas usando una API llamada TMDB. Permite ver la información básica de la pelicula, como su idioma, su calificación, su fecha de estreno y la cantidad de votos que tiene.",
        "roadRunnersDescription": "Estoy colaborando con un compañero para crear esta página donde se pueden ver vehículos falsos, para que las personas puedan comunicarse con los vendedores de automóviles a través de la página y las personas puedan publicar su vehículo en venta con sus características.",
-       "pokedexDescription": "Esta es una aplicación web que te permite mostrar, agregar, editar y eliminar tus pokemones, sus regiones y sus tipos."
+       "pokedexDescription": "Esta es una aplicación web que te permite mostrar, agregar, editar y eliminar tus pokemones, sus regiones y sus tipos.",
+       "h3_experience": "Experiencia",
+       "date_experienceBHD": "Jun 2023 - Actual",
+       "p_experienceBHD": "Estoy realizando una pasantía en la empresa BHD donde estoy aprendiendo sobre el ambiente laboral de una empresa, aplicando mis conocimientos y aprendiendo nuevas tecnologías para adquirir experiencia."
     },
     "en":{
         "text-curriculum": "Resume",
         "link_home": "Home",
         "link_about": "About",
         "link_studies": "Studies",
+        "link_experience": "Experience",
         "link_technologies": "Technologies",
         "link_contacts": "Contacts",
         "home_text": "I'm Software Developer, passionate about programming and web development, come and check what I can do. Let's gooooo!!!",
@@ -65,6 +70,9 @@
         "contactBookDescription" : "In this project I use HTML, CSS and JS, to save the contacts with their respective data in the localStorage of the browser.",
         "moviewsOverviewDescription": "This is a simple page that collects a collection of movie information using an API called TMDB. It allows you to see the basic information of the movie, such as its language, its rating, its release date and the number of votes it has.",
         "roadRunnersDescription": "I'm working with a partner to create this page where you can view fake vehicles, so people can communicate with car dealers through the page and people can post their vehicle for sale with their features.",
-        "pokedexDescription": "This is a web app where you can manage your pokemons, you can get, add, update, delete pokemons and their region or their types."
+        "pokedexDescription": "This is a web app where you can manage your pokemons, you can get, add, update, delete pokemons and their region or their types.",
+        "h3_experience": "Experience",
+        "date_experienceBHD": "Jun 2023 - Current",
+        "p_experienceBHD": "I'm doing an internship at the BHD company where I'm learning about the work environment of a company, applying my knowledge and learning new technologies to gain experience."
     }
   }
