@@ -11,8 +11,8 @@
   margin: o auto;
 }
 .home .home__content .home__title {
-  font-weight: 700;
-  font-size: 50px;
+  padding: 10px;
+  font-size: 45px;
   transition: all 1s;
   line-height: 55px;
 }
@@ -22,6 +22,7 @@
 }
 .home .home__description {
   transition: all 1s;
+  padding: 10px;
 }
 .home .home__description:hover {
   translate: 9px;

@@ -109,4 +109,7 @@ section[id] {
   .main {
     width: 98%;
   }
+  .home__title {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
