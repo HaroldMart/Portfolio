@@ -23,11 +23,12 @@ li {
   list-style: none;
 }
 
-h3 {
+.title_section {
   font-size: 30px;
   transition: all 1s;
+  padding-left: 10px;
 }
-h3:hover {
+.title_section:hover {
   translate: 9px;
   color: #0ddbee;
 }

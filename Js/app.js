@@ -3,35 +3,33 @@ const works = [
   {
     image: "images/controlEmpleadosImage.png",
     name: "Employee Management",
-    techs: "HTML, CSS, PHP", 
+    techs: "HTML, CSS, PHP",
     code_link: "https://github.com/HaroldMart/ControlDeEmpleados",
-    key_lang_description: "employeeManagementDescription",
-  }, {
+  },
+  {
     image: "images/contackBook_Image.png",
     name: "Contact Book",
     techs: "HTML, CSS, JS",
     code_link: "https://github.com/HaroldMart/Agenda-de-Contactos-",
-    key_lang_description: "contactBookDescription",
-  }, {
+  },
+  {
     image: "images/moviesOverviewImage.png",
     name: "Movies Overview",
     techs: "HTML, CSS, JS",
     code_link: "https://github.com/HaroldMart/MoviesOverview",
-    key_lang_description: "moviewsOverviewDescription",
-  }, {
+  },
+  {
     image: "images/roadRunnersImage.jpg",
     name: "RoadRunners",
     techs: "Angular, Expressjs, MongoDB",
     code_link: "https://github.com/HaroldMart/RoadRunners-Backend",
-    key_lang_description: "roadRunnersDescription",
   },
   {
     image: "images/pokedex.png",
     name: "Pokedex",
     techs: "ASP.NET, SQL Server, Entity framework",
     code_link: "https://github.com/HaroldMart/Pokedex",
-    key_lang_description: "pokedexDescription",
-  }
+  },
 ];
 
 AOS.init({ duration: 1300 });
@@ -61,18 +59,17 @@ works.forEach((project) => {
   div.className = "content__project";
   div.setAttribute("data-aos", "fade-right");
   div.innerHTML = `
+  <a href='${project.code_link}' target="_blank">
       <picture class="content__project_image">
         <img src="${project.image}" alt="" />
       </picture>
+    </a>
      
       <div class='project_info'>
-        <h3>${project.name}</h3>
-        <p class="lang" key="${project.key_lang_description}"></p>
-        <p><b class="lang" key="link_technologies"></b>: ${project.techs}</p>
+        <h3 class="title_project">${project.name}</h3>
+      
+        <p class="p_tech_project"><b class="lang" key="link_technologies"></b>: ${project.techs}</p>
       </div>
-      <div class='project_btn'>
-      <a href='${project.code_link}' target="_blank"><i class="fi fi-rs-rectangle-code"></i></a>
-    </div>
   `;
 
   divProjects.appendChild(div);
