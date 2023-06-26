@@ -11,9 +11,10 @@
 .projects .projects__content .content__project {
   border-radius: 10px;
   display: flex;
-  background-color: rgba(201, 201, 201, 0.9960784314);
+  background-color: rgba(57, 90, 108, 0.9960784314);
   color: black;
   flex-direction: column;
+  color: rgb(231, 230, 230);
   overflow: hidden;
   justify-content: space-between;
   box-shadow: 3px 3px 4px 2px black;
