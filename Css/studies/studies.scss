@@ -13,11 +13,11 @@
       height: 200px;
       transition: all 700ms;
 
-        &:hover {
-            transform: scale(0.95);
-        }
-      } 
+      &:hover {
+        transform: scale(0.95);
+      }
     }
+  }
 
   .studies__content {
     display: flex;
@@ -35,12 +35,10 @@
 
       &:hover {
         transform: scale(0.95);
-        box-shadow: #3f6ca6 3px 5px 2px 3px;
-      }      
+      }
 
       h4 {
         margin-bottom: 0;
-
       }
     }
   }

@@ -11,14 +11,22 @@
     margin-top: 2rem;
     width: 420px;
 
+    span {
+      transition: all 700ms;  
+      &:hover {
+        translate: 9px;
+        color: #d2dfe0;
+      }
+    }
+
     .date_experience {
       display: flex;
       justify-content: center;
       transition: all 700ms;
- 
+
       &:hover {
         translate: 9px;
-        color: #0ddbee;
+        color: #d2dfe0;
       }
     }
 
@@ -42,7 +50,7 @@
       transition: all 700ms;
       &:hover {
         translate: 9px;
-        color: #0ddbee;
+        color: #d2dfe0;
       }
     }
   }

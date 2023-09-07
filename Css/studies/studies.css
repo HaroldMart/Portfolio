@@ -32,7 +32,6 @@
 }
 .studies .studies__content .content__div:hover {
   transform: scale(0.95);
-  box-shadow: #3f6ca6 3px 5px 2px 3px;
 }
 .studies .studies__content .content__div h4 {
   margin-bottom: 0;

@@ -8,12 +8,26 @@
 .about ul {
   padding: 1rem 0;
 }
+.about ul li {
+  transition: all 800ms;
+}
+.about ul li:hover {
+  color: #d2dfe0;
+  transform: scale(0.98);
+}
 .about .about__content {
   display: flex;
   flex-direction: column;
 }
 .about .about__content h3 {
   margin: 0;
+}
+.about .about__content span {
+  transition: all 800ms;
+}
+.about .about__content span:hover {
+  transform: scale(0.98);
+  color: #d2dfe0;
 }
 .about .about__image img {
   width: 100%;

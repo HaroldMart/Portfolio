@@ -13,7 +13,7 @@
 }
 .contact .contact__content p:hover {
   translate: 9px;
-  color: #0ddbee;
+  color: #d2dfe0;
 }
 .contact .contact__content .contact__icons {
   display: flex;
