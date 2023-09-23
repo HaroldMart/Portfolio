@@ -29,7 +29,6 @@
        "h3_contact": "Habla conmigo!",
        "p_contact": "¿Quieres contactarme? Puedes enviarme un mensaje...",
        "h3_experience": "Experiencia",
-       "date_experienceBHD": "Jun 2023 - Actual",
        "p_experienceBHD": "Estoy realizando una pasantía en la empresa BHD donde estoy aprendiendo sobre el ambiente laboral de una empresa, aplicando mis conocimientos y aprendiendo nuevas tecnologías para adquirir experiencia."
     },
     "en":{
@@ -62,7 +61,6 @@
         "h3_contact": "Talk with Me!",
         "p_contact": "Do you want to contact me ? You can send me a message...",
         "h3_experience": "Experience",
-        "date_experienceBHD": "Jun 2023 - Current",
         "p_experienceBHD": "I'm doing an internship at the BHD company where I'm learning about the work environment of a company, applying my knowledge and learning new technologies to gain experience."
     }
   }
