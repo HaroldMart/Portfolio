@@ -1,0 +1,748 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;600;700&family=PT+Sans&family=Quicksand:wght@300&display=swap");
+
+@mixin flex($justify: flex-start, $direction: row, $space: 0, $wrap: nowrap) {
+  display: flex;
+  justify-content: $justify;
+  flex-direction: $direction;
+  gap: $space;
+  flex-wrap: $wrap;
+}
+
+$colors: (
+  "dark-blue": #09111e,
+  "green": #1ee832,
+  "light-blue": #101c30,
+  "orange": #27cd0a,
+  "grey": #d9d9d9,
+);
+
+@mixin small-screen {
+  @media (max-width: 470px) {
+    @content;
+  }
+}
+
+@mixin mid-screen {
+  @media (max-width: 750px) {
+    @content;
+  }
+}
+
+@mixin large-screen {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
+@keyframes roll {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -70%, 0);
+  }
+  20%,
+  25% {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+  43%,
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 70%, 0);
+  }
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+}
+
+body {
+  color: white;
+  background-color: map-get($colors, "dark-blue");
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  @include mid-screen {
+    font-size: 14px;
+  }
+  @include small-screen {
+    font-size: 12px;
+  }
+}
+
+section,
+header {
+  padding: 20px 8rem;
+  margin-top: 5rem;
+
+  @include mid-screen {
+    padding: 2px 30px;
+  }
+}
+
+h2 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  margin: 0.6rem 0;
+  transition: all 700ms;
+  &:hover {
+    translate: 8px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.divider {
+  height: 3px;
+  border-radius: 60px;
+  width: 50px;
+  background-color: map-get($colors, "green");
+}
+
+.title {
+  @include flex($direction: column);
+  margin-bottom: 3rem;
+}
+
+.section {
+  opacity: 0;
+  margin-top: 30px;
+  height: 30px;
+}
+
+.container-icons {
+  @include flex($space: 2rem);
+  @include mid-screen {
+    justify-content: center;
+  }
+
+  .icon {
+    transition: all 400ms;
+    img {
+      width: 30px;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+// Navbar
+
+.navbar {
+  @include flex($justify: space-between);
+  padding: 20px 0 20px 0;
+  width: 100%;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+  backdrop-filter: blur(30px);
+  @include small-screen {
+    backdrop-filter: unset;
+  }
+
+  .logo {
+    width: 90px;
+    transition: all 600ms;
+    position: relative;
+    top: 8px;
+    left: 30px;
+
+    @include small-screen {
+      width: 70px;
+    }
+
+    &:hover {
+      transform: scale(0.97);
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .nav-links {
+    margin-right: 30px;
+    @include large-screen {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      margin-left: -100%;
+      display: flex;
+      margin-right: 0;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(51, 51, 51, 0.767);
+      backdrop-filter: blur(15px);
+      transition: all 0.5s ease;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      @include flex();
+      align-items: center;
+      @include large-screen {
+        flex-direction: column;
+      }
+
+      li {
+        margin: 0 15px;
+        @include large-screen {
+          margin: 25px 0;
+          font-size: 1.2em;
+        }
+
+        .link {
+          transition: all 400ms;
+
+          &:hover {
+            color: map-get($colors, "grey");
+            transform: scale(1.9);
+          }
+        }
+
+        .active {
+          color: map-get($colors, "green");
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .menu {
+    width: 20px;
+    position: relative;
+    top: 10px;
+    right: 30px;
+    display: none;
+
+    @include large-screen {
+      display: block;
+    }
+  }
+
+  .mobile-menu {
+    margin-left: 0;
+  }
+}
+
+// Hero
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @include large-screen {
+    grid-template-columns: 1fr;
+  }
+
+  .content {
+    @include flex($justify: center, $direction: column, $space: 4rem);
+    @include small-screen {
+      gap: 30px;
+    }
+
+    .greetings {
+      h1 {
+        font-size: 50px;
+        margin: 0;
+
+        @include mid-screen {
+          font-size: 35px;
+        }
+
+        @include small-screen {
+          font-size: 30px;
+        }
+      }
+
+      .name {
+        transition: all 400ms;
+
+        &:hover {
+          translate: 9px;
+        }
+      }
+
+      .list {
+        padding: 0;
+        margin: 0;
+
+        .item {
+          list-style: none;
+          font-size: 50px;
+          background: linear-gradient(
+            to left,
+            rgb(163, 5, 195),
+            rgb(167, 19, 19) 77%,
+            rgb(7, 174, 174)
+          );
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          position: absolute;
+          position: absolute;
+          animation: roll 9s ease 1s infinite backwards;
+
+          &:nth-child(1) {
+            animation-delay: 0s;
+          }
+
+          &:nth-child(2) {
+            animation-delay: 3s;
+          }
+
+          &:nth-child(3) {
+            animation-delay: 6s;
+          }
+
+          @include mid-screen {
+            font-size: 35px;
+          }
+
+          @include small-screen {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+
+    .description {
+      color: map-get($colors, "grey");
+
+      transition: all 600ms;
+
+      &:hover {
+        translate: 4px;
+      }
+    }
+
+    .resume-Button {
+      @include flex($justify: center);
+      padding: 11px;
+      background-color: map-get($colors, "orange");
+      border-radius: 20px;
+      width: 100px;
+      transition: all 700ms;
+
+        &:hover {
+          transform: scale(0.94);
+        }
+
+      a {
+        font-weight: 300;
+      }
+    }
+  }
+
+  .image {
+    @include flex($justify: center);
+    transition: all 600ms;
+    &:hover {
+      transform: scale(0.95);
+    }
+    img {
+      width: 80%;
+    }
+
+    @include large-screen {
+      display: none;
+    }
+  }
+}
+
+// About
+
+.about {
+  display: grid;
+  gap: 10%;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+
+  @include large-screen {
+    gap: 2rem;
+  }
+
+  @include mid-screen {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    @include flex($justify: center, $direction: column);
+    padding-left: 30px;
+    @include large-screen {
+      padding-left: 0;
+    }
+    @include mid-screen {
+      align-items: center;
+    }
+    .content {
+      @include flex($direction: column, $space: 30px);
+
+      .items {
+        margin: 0;
+        padding: 0;
+        @include flex($direction: column, $space: 10px);
+
+        .item {
+          @include flex($space: 25px);
+          align-items: center;
+          list-style: none;
+        }
+      }
+    }
+  }
+
+  .image {
+    @include flex($justify: flex-end);
+    transition: all 600ms;
+    &:hover {
+      transform: scale(0.95);
+    }
+    @include mid-screen {
+      justify-content: center;
+    }
+    img {
+      width: 90%;
+      min-width: 200px;
+      max-width: 440px;
+    }
+  }
+}
+
+// Services
+
+// .services {
+//   @include flex($justify: center, $direction: column, $space: 10px);
+
+//   .title {
+//     align-items: center;
+//   }
+
+//   .content {
+//     @include flex($direction: column, $space: 30px);
+
+//     .description {
+//     }
+
+//     .container-services {
+//       @include flex($justify: center, $space: 30px, $wrap: wrap);
+
+//       .service {
+//         border-radius: 10px;
+//         width: 340px;
+//         height: 250px;
+//         background-color: #2b2d41;
+//       }
+//     }
+//   }
+// }
+
+// Resume
+
+.resume {
+  @include flex($direction: column);
+
+  .title {
+    align-items: center;
+  }
+
+  .content {
+    @include flex($justify: center, $space: 30px);
+
+    @include mid-screen {
+      flex-wrap: wrap;
+      gap: 80px;
+      .divider-section {
+        display: none;
+      }
+    }
+
+    .education {
+      .title-content {
+        @include flex($justify: flex-end);
+        @include mid-screen {
+          justify-content: flex-start;
+        }
+        transition: all 400ms;
+
+        &:hover {
+          transform: scale(0.98);
+        }
+      }
+
+      .list {
+        @include flex($direction: column, $space: 30px);
+        list-style: none;
+        padding: 0;
+
+        .item {
+          @include flex($direction: column);
+          align-items: flex-end;
+
+          @include mid-screen {
+            align-items: flex-start;
+          }
+          transition: all 400ms;
+
+          &:hover {
+            transform: scale(0.98);
+          }
+
+          .placeName {
+            display: flex;
+            align-items: center;
+          }
+
+          .course {
+            h5 {
+              margin: 8px 0;
+              font-size: 17px;
+            }
+          }
+
+          .date {
+            font-size: 14px;
+
+            span {
+              opacity: 0.5;
+            }
+          }
+
+          .description {
+            margin-top: 20px;
+            text-align: end;
+
+            @include mid-screen {
+              text-align: start;
+            }
+          }
+        }
+      }
+    }
+
+    .experience {
+      .title-content {
+        @include flex($justify: flex-start);
+        transition: all 400ms;
+
+        &:hover {
+          transform: scale(0.98);
+        }
+      }
+
+      .list {
+        @include flex($direction: column, $space: 30px);
+        list-style: none;
+        padding: 0;
+
+        .item {
+          @include flex($direction: column);
+          align-items: flex-start;
+
+          transition: all 400ms;
+
+          &:hover {
+            transform: scale(0.98);
+          }
+
+          .placeName {
+            display: flex;
+            align-items: center;
+          }
+
+          .position {
+            h5 {
+              margin: 8px 0;
+              font-size: 17px;
+            }
+          }
+
+          .date {
+            font-size: 14px;
+
+            span {
+              opacity: 0.5;
+            }
+          }
+
+          .description {
+            text-align: start;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+
+    .divider-section {
+      width: 1px;
+      background-color: rgb(127, 127, 127);
+      height: 550px;
+    }
+  }
+}
+
+// Skills
+
+.skills {
+  @include flex($direction: column);
+
+  .title {
+    align-items: center;
+  }
+
+  .content {
+    @include flex($justify: center, $space: 4.3rem, $wrap: wrap);
+
+    .icon {
+      // min-width: 50px;
+      // max-width: 87px;
+      transition: all 400ms;
+      @include flex($direction: column, $space: 10px);
+      align-items: center;
+
+      &:hover {
+        transform: scale(0.9);
+      }
+
+      img {
+        width: 85%;
+      }
+
+    }
+  }
+}
+
+// Portfolio
+
+.portfolio {
+  @include flex($direction: column);
+  padding: 0 2rem;
+
+  .title {
+    align-items: center;
+  }
+
+  .content {
+    @include flex($justify: center, $space: 40px, $wrap: wrap);
+
+    .project {
+      width: 365px;
+      border-radius: 10px;
+      position: relative;
+      background-color: #2b2d41;
+      transition: all 500ms;
+
+      &:hover {
+        transform: scale(0.95);
+      }
+
+      .image {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .info {
+        @include flex($direction: column);
+        align-items: center;
+        margin-bottom: 10px;
+
+        h4 {
+          margin-top: 25px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+// Contact
+
+.contact {
+  margin-bottom: 40px;
+  @include small-screen {
+    padding: 0;
+  }
+
+  .title {
+    align-items: center;
+  }
+
+  .content {
+    form {
+      @include flex($direction: column, $space: 40px);
+      width: 100%;
+      align-items: center;
+
+      input,
+      textarea {
+        background-color: #101c30;
+        color: #afadad;
+        font-size: 15px;
+        border: none;
+        padding: 20px;
+        border-radius: 7px;
+      }
+
+      textarea {
+        resize: none;
+        height: 210px;
+      }
+
+      .btn {
+        color: white;
+        background-color: map-get($colors, "green");
+        width: 125px;
+        padding: 15px;
+        font-weight: 600;
+        transition: all 700ms;
+
+        &:hover {
+          transform: scale(0.94);
+        }
+      }
+
+      .form-container {
+        @include flex($justify: center, $space: 20px, $wrap: wrap);
+        width: 100%;
+
+        div {
+          @include flex($justify: space-between, $direction: column);
+          width: 40%;
+
+          @include mid-screen {
+            gap: 10px;
+            width: 70%;
+          }
+
+          @include small-screen {
+            width: 85%;
+          }
+        }
+      }
+
+      .container-icons {
+        .icon {
+          img {
+            width: 35px;
+
+            @include small-screen {
+              width: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

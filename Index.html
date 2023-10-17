@@ -1,268 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Css/normalize.css">
-    <link rel="stylesheet" href="/Js/AOS/dist/aos.css">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
-    <link rel="stylesheet" href="Css/navbar/navbar.css">
-    <link rel="stylesheet" href="Css/home/home.css">
-    <link rel="stylesheet" href="Css/about/about.css">
-    <link rel="stylesheet" href="Css/studies/studies.css">
-    <link rel="stylesheet" href="Css/experiences/experiences.css">
-    <link rel="stylesheet" href="Css/technologies/technologies.css">
-    <link rel="stylesheet" href="Css/projects/projects.css">
-    <link rel="stylesheet" href="Css/contact/contact.css">
-    <link rel="stylesheet" href="/Css/style/style.css">
-    <script defer src="Js/AOS/dist/aos.js"></script>
-    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script defer src="Js/app.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="/js/AOS/dist/aos.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <script defer src="/js/AOS/dist/aos.js"></script>
+    <script defer type="module" src="/js/main.js"></script>
     <title>Haroldy's Portfolio</title>
-</head>
-<body>
-    <header class="hero">
-        <nav class="nav container" id="nav" data-aos="fade-down">
-            <div class="resume">
-                <img src="icons/profil.svg" alt="" />
-                <a href="curriculum/curriculum.html" class="lang" key="text-curriculum"></a>
-              </div>
-              <div>
-                <button class="translate" id="es">Es</button>
-                <button class="translate" id="en">En</button>
-              </div>
+  </head>
+  <body>
+    <nav class="navbar" data-aos="fade-left">
+      <a href="#home" class="logo">
+        <img src="/assets/icons/logo.png" alt="" />
+      </a>
+      <div class="nav-links">
+        <ul>
+          <li><a class="link active" href="#home">Home</a></li>
+          <li><a class="link" href="#about">About</a></li>
+          <li><a class="link" href="#resume">Resume</a></li>
+          <li><a class="link" href="#skills">Skills</a></li>
+          <li><a class="link" href="#portfolio">Portfolio</a></li>
+          <li><a class="link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <img src="/assets/icons/menu-btn.png" alt="menu" class="menu" />
+    </nav>
 
-            <ul class="nav__links">
-                <li class="nav__item">
-                    <a href="#home" class="nav__link lang" key="link_home"></a>
-                </li>
-                <li class="nav__item">
-                    <a href="#about" class="nav__link lang" key="link_about"></a>
-                </li>
-                <li class="nav__item">
-                    <a href="#studies" class="nav__link lang" key="link_studies"></a>
-                </li>
-                <li class="nav__item">
-                  <a href="#experience" class="nav__link lang" key="link_experience"></a>
-              </li>
-                <li class="nav__item">
-                    <a href="#technologies" class="nav__link lang" key="link_technologies"></a>
-                </li>
-                <li class="nav__item">
-                    <a href="#projects" class="nav__link lang" key="h3_projects"></a>
-                </li>
-                <li class="nav__item">
-                    <a href="#contact" class="nav__link lang" key="link_contacts"></a>
-                </li>
-            </ul>
-        </nav>
+    <div class="section" id="home"></div>
+    <header class="hero" data-aos="fade-down">
+      <div class="content">
+        <div class="greetings">
+          <h1 class="name">Hi, I'm Haroldy!!</h1>
+          <ul class="list">
+            <li class="item greeting"><h1>Developer</h1></li>
+            <li class="item greeting"><h1>Player</h1></li>
+            <li class="item greeting"><h1>Feelancer</h1></li>
+          </ul>
+        </div>
+        <p class="description">
+          I'm Software Developer, passionate about programming and web
+          development, come and check what I can do..
+        </p>
+        <div class="resume-Button">
+          <a href="/assets/resume/resume.html">My Resume</a>
+        </div>
+      </div>
+      <div class="image">
+        <img src="/assets/images/laptop.svg" alt="" />
+      </div>
     </header>
 
-    <main class="main">
-        <section id="home" class="home">
-            <div class="home__content" data-aos="fade-down">
-              <h2 class="home__title">Haroldy Martinez</h2> 
-              <p class="home__description lang" data-aos="fade-right" key="home_text"></p>
+    <div class="section" id="about"></div>
+    <section class="about" data-aos="fade-up-right">
+      <div class="image">
+        <img src="/assets/images/perfil.png" alt="" />
+      </div>
+      <div class="container">
+        <div class="title">
+          <h2>About me</h2>
+          <div class="divider"></div>
+        </div>
+
+        <div class="content">
+          <ul class="items">
+            <li class="item">
+              <span class="icon">
+                <img src="/assets/icons/location.png" alt="" />
+              </span>
+              <span>Dominican Republic, Santo Domingo</span>
+            </li>
+            <li class="item">
+              <span class="icon">
+                <img src="/assets/icons/mail.png" alt="" />
+              </span>
+              <span>HaroldM09@outlook.com</span>
+            </li>
+            <li class="item">
+              <span class="icon">
+                <img src="/assets/icons/languages.png" alt="" />
+              </span>
+              <span>Spanish (Native), English (B1)</span>
+            </li>
+            <li class="item">
+              <span class="icon">
+                <img src="/assets/icons/phone.png" alt="" />
+              </span>
+              <span>+1 (849) 376 2615</span>
+            </li>
+            <li class="item">
+              <span class="icon">
+                <img src="/assets/icons/career.png" alt="" />
+              </span>
+              <span>Software Development</span>
+            </li>
+            <li class="item">
+              <span class="icon">
+                <img src="/assets/icons/hobbies.png" alt="" />
+              </span>
+              <span>Programming, Reading, Videogames</span>
+            </li>
+          </ul>
+          <div class="container-icons">
+            <a class="icon" href="https://t.me/haroldymart" target="_blank">
+              <img src="/assets/icons/telegram.svg" alt="" />
+            </a>
+            <a
+              class="icon"
+              href="https://www.instagram.com/harol098g/"
+              target="_blank"
+            >
+              <img src="/assets/icons/instagram.svg" alt="" />
+            </a>
+            <a
+              class="icon"
+              href="https://www.linkedin.com/in/haroldy-martinez/"
+              target="_blank"
+            >
+              <img src="/assets/icons/linkedin.png" alt="" />
+            </a>
+            <a
+              class="icon"
+              href="https://github.com/HaroldMart"
+              target="_blank"
+            >
+              <img src="assets/icons/github.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div class="section" id="services"></div>
+    <section class="services">
+      <div class="title">
+        <h2>Services</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="content">
+        <p class="description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit illo
+          officia quam vel vero aut nesciunt veritatis exercitationem expedita
+          maiores quae nulla, dignissimos ad. Veritatis consequatur praesentium
+          quibusdam? Quaerat, suscipit.
+        </p>
+        <div class="container-services">
+          <div class="service"></div>
+          <div class="service"></div>
+          <div class="service"></div>
+        </div>
+      </div>
+    </section> -->
+
+    <div class="section" id="resume"></div>
+    <section class="resume" data-aos="fade-up-left">
+      <div class="title">
+        <h2>Resume</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="content">
+        <div class="education">
+          <div class="title-content">
+            <h3>Education</h3>
+          </div>
+          <ul class="list education-list"></ul>
+        </div>
+        <div class="divider-section"></div>
+        <div class="experience">
+          <div class="title-content">
+            <h3>Experience</h3>
+          </div>
+          <ul class="list experience-list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="section" id="skills"></div>
+    <section class="skills" data-aos="fade-down-right">
+      <div class="title">
+        <h2>Skills</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="content skills-list"></div>
+    </section>
+
+    <div class="section" id="portfolio"></div>
+    <section class="portfolio" data-aos="fade-up-left">
+      <div class="title">
+        <h2>Portfolio</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="content projects-container"></div>
+    </section>
+
+    <div class="section" id="contact"></div>
+    <section class="contact">
+      <div class="title">
+        <h2>Talk with me!</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="content">
+        <form action="https://formspree.io/f/mrgwrqpa" method="post">
+          <div class="form-container">
+            <div>
+              <input
+                type="text"
+                class="info"
+                placeholder="Full Name"
+                name="Name"
+                id="name"
+              />
+              <input
+                type="email"
+                class="info"
+                placeholder="Email"
+                name="Email"
+                id="email"
+              />
+              <input
+                type="text"
+                class="info"
+                placeholder="Assunt"
+                name="Assunt"
+                id="name"
+              />
             </div>
 
-            <div class="home__image" data-aos="fade-up">
-                <img src="images/Perfil.jpg" alt="" srcset="">
+            <div>
+              <textarea
+                placeholder="Message"
+                name="Message"
+                id="message"
+                cols="30"
+                rows="7"
+              ></textarea>
             </div>
-        </section>
-        
-        <section id="about" class="about" data-aos="fade-up">
-            <div class="about__image">
-              <img src="icons/image-pc.svg" alt="">
-            </div>
-            <div class="about__content">
-              <h3 class="lang title_section" key="h3_about"></h3>
-              <p>
-                <ul>
-                  <li class="lang" key="li_about_learning"></li>
-                  <li class="lang" key="li_about_languages"></li>
-                  <li class="lang" key="li_about_live"></li>
-                  <li>Email: HaroldM09@outlook.com</li>
-                  <li class="lang" key="li_about_phone"></li>
-                </ul>
-                <span class="lang" key="span_about1"></span>
-                <span class="lang" key="span_about2"></span>
-              </p>
-            </div>
-        </section>
+          </div>
+          <div class="container-icons">
+            <a class="icon" href="https://t.me/haroldymart" target="_blank">
+              <img src="/assets/icons/telegram.svg" alt="" />
+            </a>
+            <a
+              class="icon"
+              href="https://github.com/HaroldMart"
+              target="_blank"
+            >
+              <img src="assets/icons/github.svg" alt="" />
+            </a>
 
-        <section id="studies" class="studies" data-aos="fade-up">
-            <h3 class="lang title_section" key="h3_studies"></h3>
-            <div class="studies__images">
-              <img class="icon ico1" src="https://cdn-icons-png.flaticon.com/512/747/747086.png" alt="">
-              <img class="icon ico2" src="https://cdn-icons-png.flaticon.com/512/1142/1142705.png" alt="">      
-              <img class="icon ico3" src="https://cdn-icons-png.flaticon.com/512/183/183759.png" alt="">
-            </div>
-            <div class="studies__content" data-aos="fade-up">
-              <div class="content__div">
-                  <div class="title">
-                      <h4>Instituto Tecnologico de las Americas</h4>
-                      <div class="date lang" key="date_studies1">
-                      </div>
-                  </div>
-                <p class="lang" key="p_studies1"></p>
-              </div>
-              <div class="content__div">
-                  <div class="title">
-                      <h4>Cisco Networking Academy</h4>
-                      <div class="date lang" key="date_studies2">
-                      </div>
-                  </div>
-                <p class="lang" key="p_studies2"></p>
-              </div>
-              <div class="content__div">
-                  <div class="title">
-                      <h4>Udemy</h4>
-                      <div class="date lang">
-                        Jul 2022 - Nov 2022
-                      </div>
-                  </div>
-                <p class="lang" key="p_studies3"></p>
-              </div>
-              <div class="content__div">
-                  <div class="title">
-                      <h4 class="lang" key="title_studies4"></h4>
-                      <div class="date lang" key="date_studies4">
-                      </div>
-                  </div>
-                <p class="lang" key="p_studies4"></p>
-              </div>
-            </div>
-        </section>
+            <a
+              class="icon"
+              href="https://www.instagram.com/harol098g/"
+              target="_blank"
+            >
+              <img src="/assets/icons/instagram.svg" alt="" />
+            </a>
 
-        <section id="experience" class="experience" data-aos="fade-up">
-          <h3 class="lang title_section" key="h3_experience"></h3>
-          <div class="experience__content" data-aos="fade-up">
-            <div class="content__div">
-                <div class="title">
-                    <h3>Banco BHD</h3>
-                    <img class="experience_image" src="images/bhd_image.png" alt="">
-                </div>
-              </div>
-
-                <div class="date_experience">Jun 2023 - Sep 2023</div>
-              <p class="lang p_experience" key="p_experienceBHD"></p>
-              <span>ASP .NET, Oracle Database, GIT, Azure DevOps</span>
-            </div>
-      </section>
-
-        <section id="technologies" class="technologies" data-aos="fade-up">
-            <h3 class="lang title_section" key="h3_technologies"></h3>
-            <div class="technologies__content">
-              <div class="tech_icon">
-                <p data-aos="fade-right">HTML</p>
-                <img src="icons/icons8-html-5.svg" data-aos="fade-right" alt="" />
-              </div>
-              <div class="tech_icon">
-                <p data-aos="fade-right">CSS</p>
-                <img src="icons/icons8-css3.svg" data-aos="fade-right" alt="" />
-              </div>
-              <div class="tech_icon">
-                <p data-aos="fade-right">JavaScript</p>
-                <img src="icons/icons8-javascript.svg" data-aos="fade-right" alt="" />
-              </div>
-              <div class="tech_icon">
-                <p data-aos="fade-right">Bootstrap</p>
-                <img src="/icons/icons8-bootstrap.svg" data-aos="fade-right" alt="" />
-              </div>
-              <div class="tech_icon">
-                <p data-aos="fade-right">C#</p>
-                <img src="icons/icons8-c-sharp-logo.svg" data-aos="fade-right" alt="" />
-              </div>
-              <div class="tech_icon">
-                <p data-aos="fade-right">MongoDB</p>
-                <img src="icons/icons8-mongodb.svg" data-aos="fade-right" alt="" />
-              </div>
-              <div class="tech_icon">
-                <p data-aos="fade-right">Sass</p>
-                <img src="icons/icons8-sass.svg" data-aos="fade-right" alt="" />
-              </div>
-              <div class="tech_icon">
-                <p data-aos="fade-right">Git</p>
-                <img src="icons/icons8-git.svg" data-aos="fade-right" alt="" />
-              </div>
-              <div class="tech_icon">
-                <p data-aos="fade-right">SQL Server</p>
-                <img src="icons/icons8-microsoft-sql-server.svg" data-aos="fade-right" alt="" />
-              </div>
-              <div class="tech_icon">
-                <p data-aos="fade-right">NodeJS</p>
-                <img src="icons/icons8-node-js.svg" data-aos="fade-right" alt="" />
-              </div>
-              <div class="tech_icon">
-                <p data-aos="fade-right">MySql</p>
-                <img src="icons/icons8-mysql-logo.svg" data-aos="fade-right" alt="" />
-              </div>
-            </div>
-        </section>
-
-        <section id="projects" class="projects" id="projects" data-aos="fade-up">
-            <h3 class="lang title_section" key="h3_projects"></h3>
-            <div id="projects__content" class="projects__content"></div>
-        </section>
-      
-        <section id="contact" class="contact" data-aos="fade-up">
-            <div class="contact__content">
-              <svg
-                width="55"
-                height="55"
-                viewBox="0 0 41 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle
-                  cx="20.2834"
-                  cy="20"
-                  r="20"
-                  fill="url(#paint0_linear_1_154)"
-                />
-                <path
-                  d="M25.96 13.04V27H23.16V21.06H17.18V27H14.38V13.04H17.18V18.78H23.16V13.04H25.96Z"
-                  fill="white"
-                />
-                <defs>
-                  <linearGradient
-                    id="paint0_linear_1_154"
-                    x1="34.2834"
-                    y1="-1.84178e-06"
-                    x2="7.28345"
-                    y2="40"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#EA5F5F" />
-                    <stop offset="1" stop-color="#EEAA55" />
-                  </linearGradient>
-                </defs>
-              </svg>
-      
-              <h3 class="lang title_section" key="h3_contact"></h3>
-              <p class="lang" key="p_contact"></p>
-      
-              <div class="contact__icons">
-                <a href="https://github.com/HaroldMart" target="_blank">
-                  <img src="icons/icons8-github.svg" alt=""/>
-                </a>
-                <a href="https://t.me/haroldymart" target="_blank">
-                  <img src="icons/icons8-telegram-app.svg" alt=""/>
-                </a>
-                <a href="mailto:HaroldM09@outlook.com?subject=envioDesdeFormulario&body=Name%3A%20%0AEmail%3A%20%0AMessage%3A%20" target="_blank"  id="send-button">
-                  <img src="https://img.icons8.com/sf-regular-filled/40/ffffff/new-post.png"/>
-                </a>
-                <a href="https://www.instagram.com/harol098g/" target="_blank">
-                  <img src="icons/icons8-instagram.svg" alt=""/>
-                </a>
-                <a href="https://www.linkedin.com/in/haroldy-martinez/" target="_blank">
-                  <img src="icons/icons8-linkedin-2.svg" alt=""/>
-                </a>
-              </div>
-            </div>
-        </section>
-    </main>
-</body>
+            <a
+              class="icon"
+              href="https://www.linkedin.com/in/haroldy-martinez/"
+              target="_blank"
+            >
+              <img src="/assets/icons/linkedin.png" alt="" />
+            </a>
+          </div>
+          <input class="btn" type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
+  </body>
 </html>
