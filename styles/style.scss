@@ -143,9 +143,7 @@ a {
   position: fixed;
   z-index: 2;
   backdrop-filter: blur(30px);
-  @include small-screen {
-    backdrop-filter: unset;
-  }
+
 
   .logo {
     width: 90px;

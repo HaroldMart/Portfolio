@@ -123,12 +123,6 @@ a {
   -webkit-backdrop-filter: blur(30px);
           backdrop-filter: blur(30px);
 }
-@media (max-width: 470px) {
-  .navbar {
-    -webkit-backdrop-filter: unset;
-            backdrop-filter: unset;
-  }
-}
 .navbar .logo {
   width: 90px;
   transition: all 600ms;
