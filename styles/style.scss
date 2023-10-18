@@ -12,7 +12,7 @@ $colors: (
   "dark-blue": #09111e,
   "green": #1ee832,
   "light-blue": #101c30,
-  "orange": #27cd0a,
+  "dark-green": #21ab2f,
   "grey": #d9d9d9,
 );
 
@@ -133,20 +133,6 @@ a {
   }
 }
 
-.translate {
-  color: white;
-  border: 0;
-  border-radius: 5px;
-  padding: 10px;
-
-  background-color: rgb(120, 120, 191);
-
-  &:hover {
-    transition: all 400ms;
-    transform: scale(0.96);
-  }
-}
-
 // Navbar
 
 .navbar {
@@ -208,10 +194,102 @@ a {
         flex-direction: column;
       }
 
+      .selector {
+        box-sizing: border-box;
+        color: white;
+        position: relative;
+        transition: all 400ms;
+        padding: 8px;
+        border-radius: 5px;
+        background-color: map-get($colors, "dark-green");
+
+        .selector-button {
+          display: flex;
+          cursor: pointer;
+          gap: 10px;
+          align-items: center;
+
+          .arrow {
+            transition: all 400ms;
+          }
+
+          p {
+            margin: 0;
+          }
+
+          i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+
+        .arrow-up {
+          transform: rotate(180deg);
+        }
+
+        .options {
+          display: none;
+          opacity: 0;
+          right: 0;
+          position: absolute;
+          margin: 0;
+          list-style-type: none;
+          background-color: #121315;
+          border-radius: 5px;
+          backdrop-filter: blur(20);
+          transition: all 400ms;
+          transform: translateY(-20px);
+          padding: 0;
+
+          .option {
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: all 400ms;
+            align-items: center;
+            cursor: pointer;
+            pointer-events: none;
+            @include large-screen {
+              font-size: 15px;
+              padding: 0 7px;
+            }
+
+            &:hover {
+              background-color: #3c3f45;
+            }
+
+            p {
+              margin: 0;
+            }
+          }
+        }
+
+        .expanded {
+          display: block;
+          opacity: 1;
+          transform: translateY(23px);
+
+          .option {
+            pointer-events: auto;
+          }
+        }
+
+        &:hover {
+          background-color: #15531c;
+        }
+
+        &:active {
+          transform: scale(0.88);
+          background-color: #3c3f45;
+        }
+      }
+
       li {
         margin: 0 15px;
         @include large-screen {
-          margin: 25px 0;
+          margin: 17px 0;
           font-size: 1.2em;
         }
 
@@ -261,7 +339,7 @@ a {
   .content {
     @include flex($justify: center, $direction: column, $space: 4rem);
     @include small-screen {
-      gap: 30px;
+      gap: 60px;
     }
 
     .greetings {
@@ -341,7 +419,7 @@ a {
     .resume-Button {
       @include flex($justify: center);
       padding: 11px;
-      background-color: map-get($colors, "orange");
+      background-color: map-get($colors, "dark-green");
       border-radius: 20px;
       width: 100px;
       transition: all 700ms;
@@ -717,7 +795,7 @@ a {
       .btn-container {
         .btn {
           color: white;
-          background-color: map-get($colors, "green");
+          background-color: map-get($colors, "dark-green");
           width: 125px;
           padding: 15px;
           font-weight: 600;

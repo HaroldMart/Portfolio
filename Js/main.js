@@ -3,9 +3,14 @@ import experience from "./experience.js";
 import skills from "./skills.js";
 import projects from "./projects.js";
 
-const translates = document.querySelectorAll('.translate');
 const menuHamburger = document.querySelector(".menu");
 const navLinks = document.querySelector(".nav-links");
+
+const selector = document.querySelector('.selector');
+const selectorButton = document.querySelector('.selector-button');
+const selectorOptions = selector.querySelector('.options');
+const options = document.querySelectorAll('.option');
+const arrow = selector.querySelector('.arrow');
 
 menuHamburger.addEventListener('click',()=>{
 navLinks.classList.toggle('mobile-menu');
@@ -55,6 +60,11 @@ function getLanguages() {
 }
 
 const changeLang = (data, lang) => {
+    if (lang == 'en') {
+        selectorButton.querySelector('.text').innerHTML = 'English';
+    } else if (lang == 'es') {
+        selectorButton.querySelector('.text').innerHTML = 'Spanish';
+    }
 
     const items = document.querySelectorAll('.lang');
     items.forEach(item => {
@@ -64,12 +74,21 @@ const changeLang = (data, lang) => {
     });
 };
 
-translates.forEach(translate => {
-    translate.addEventListener('click', () => {
-        let lang = translate.getAttribute('value');
+selector.addEventListener('click', () => {
+    selectorOptions.classList.toggle('expanded');
+    arrow.classList.toggle('arrow-up');
+})
+
+options.forEach(option => {
+    option.addEventListener('click', () => {
+        let lang = option.getAttribute('value');
 
         fetch(`/assets/lang/${lang}.json`)
             .then(Response => Response.json())
-            .then(data => changeLang(data, lang))
+            .then(data => changeLang(data, lang));
+
+            let text = option.querySelector('p');
+            selectorButton.querySelector('.text').innerHTML = text.innerText;
     });
 })
+

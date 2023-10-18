@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="/js/AOS/dist/aos.css" />
     <link rel="stylesheet" href="/styles/style.css" />
     <script defer src="/js/AOS/dist/aos.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"
+    ></script>
     <script defer type="module" src="/js/main.js"></script>
     <title>Haroldy's Portfolio</title>
   </head>
@@ -19,24 +23,39 @@
       <div class="nav-links">
         <ul>
           <li>
-            <a class="link lang active" href="#home" key="navbar.link1">Home</a>
+            <a class="link lang active" href="#home" key="navbar.link1"></a>
           </li>
           <li>
-            <a class="link lang" href="#about" key="navbar.link2">About</a>
+            <a class="link lang" href="#about" key="navbar.link2"></a>
           </li>
           <li>
-            <a class="link lang" href="#resume" key="navbar.link3">Resume</a>
+            <a class="link lang" href="#resume" key="navbar.link3"></a>
           </li>
           <li>
-            <a class="link lang" href="#skills" key="navbar.link4">Skills</a>
+            <a class="link lang" href="#skills" key="navbar.link4"></a>
           </li>
           <li>
-            <a class="link lang" href="#portfolio" key="navbar.link5"
-              >Portfolio</a
-            >
+            <a class="link lang" href="#portfolio" key="navbar.link5"></a>
           </li>
           <li>
-            <a class="link lang" href="#contact" key="navbar.link6">Contact</a>
+            <a class="link lang" href="#contact" key="navbar.link6"></a>
+          </li>
+          <li class="selector">
+            <div class="selector-button">
+              <i class="fi fi-rr-world"></i>
+              <p class="text"></p>
+              <i class="fi fi-rr-angle-small-down arrow"></i>
+            </div>
+            <ul class="options">
+              <li class="option" value="en">
+                <img src="./assets/icons/en.png" alt="" />
+                <p>English</p>
+              </li>
+              <li class="option" value="es">
+                <img src="./assets/icons/es.png" alt="" />
+                <p>Español</p>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -46,21 +65,17 @@
     <div class="section" id="home"></div>
     <header class="hero" data-aos="fade-down">
       <div class="content">
-        <div class="buttons">
-          <button class="translate" value="es" id="es">Es</button>
-          <button class="translate" value="en" id="en">En</button>
-        </div>
         <div class="greetings">
-          <h1 class="name" key="hero.name">Hi, I'm Haroldy!!</h1>
+          <h1 class="name lang" key="hero.name">g</h1>
           <ul class="list">
             <li class="item greeting">
-              <h1 class="lang" key="hero.greeting1">Developer</h1>
+              <h1 class="lang" key="hero.greeting1"></h1>
             </li>
             <li class="item greeting">
-              <h1 class="lang" key="hero.greeting2">Player</h1>
+              <h1 class="lang" key="hero.greeting2"></h1>
             </li>
             <li class="item greeting">
-              <h1 class="lang" key="hero.greeting3">Feelancer</h1>
+              <h1 class="lang" key="hero.greeting3"></h1>
             </li>
           </ul>
         </div>
@@ -85,7 +100,7 @@
       </div>
       <div class="container">
         <div class="title">
-          <h2 class="lang" key="about.title">About me</h2>
+          <h2 class="lang" key="about.title"></h2>
           <div class="divider"></div>
         </div>
         <div class="content">
@@ -94,9 +109,7 @@
               <span class="icon">
                 <img src="/assets/icons/location.png" alt="" />
               </span>
-              <span class="lang" key="about.item1"
-                >Dominican Republic, Santo Domingo</span
-              >
+              <span class="lang" key="about.item1"></span>
             </li>
             <li class="item">
               <span class="icon">
@@ -108,9 +121,7 @@
               <span class="icon">
                 <img src="/assets/icons/languages.png" alt="" />
               </span>
-              <span class="lang" key="about.item2"
-                >Spanish (Native), English (B1)</span
-              >
+              <span class="lang" key="about.item2"></span>
             </li>
             <li class="item">
               <span class="icon">
@@ -122,15 +133,13 @@
               <span class="icon">
                 <img src="/assets/icons/career.png" alt="" />
               </span>
-              <span class="lang" key="about.item3">Software Development</span>
+              <span class="lang" key="about.item3"></span>
             </li>
             <li class="item">
               <span class="icon">
                 <img src="/assets/icons/hobbies.png" alt="" />
               </span>
-              <span class="lang" key="about.item4"
-                >Programming, Reading, Videogames</span
-              >
+              <span class="lang" key="about.item4"></span>
             </li>
           </ul>
           <div class="container-icons">
@@ -187,20 +196,20 @@
     <div class="section" id="resume"></div>
     <section class="resume" data-aos="fade-up-left">
       <div class="title">
-        <h2 class="lang" key="resume.title">Resume</h2>
+        <h2 class="lang" key="resume.title"></h2>
         <div class="divider"></div>
       </div>
       <div class="content">
         <div class="education">
           <div class="title-content">
-            <h3 class="lang" key="resume.education_title">Education</h3>
+            <h3 class="lang" key="resume.education_title"></h3>
           </div>
           <ul class="list education-list"></ul>
         </div>
         <div class="divider-section"></div>
         <div class="experience">
           <div class="title-content">
-            <h3 class="lang" key="resume.experience_title">Experience</h3>
+            <h3 class="lang" key="resume.experience_title"></h3>
           </div>
           <ul class="list experience-list"></ul>
         </div>
@@ -219,7 +228,7 @@
     <div class="section" id="portfolio"></div>
     <section class="portfolio" data-aos="fade-up-left">
       <div class="title">
-        <h2 class="lang" key="skills.title">Portfolio</h2>
+        <h2 class="lang" key="skills.title"></h2>
         <div class="divider"></div>
       </div>
       <div class="content projects-container"></div>
@@ -228,7 +237,7 @@
     <div class="section" id="contact"></div>
     <section class="contact">
       <div class="title">
-        <h2 class="lang" key="contact.title">Talk with me!</h2>
+        <h2 class="lang" key="contact.title"></h2>
         <div class="divider"></div>
       </div>
       <div class="content">

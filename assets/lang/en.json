@@ -47,8 +47,8 @@
     },
     "contact": {
         "title": "Talk with me!",
-        "info": "<input type='text' class='info' placeholder='Full Name' name='Name' id='name'/> <input type='email' class='info' placeholder='Email' name='Email' id='email' /> <input type='text' class='info' placeholder='Assunt' name='Assunt' id='name' />",
-        "message": " <textarea placeholder='Message' name='Message' id='message' cols='30' rows='7'></textarea>",
+        "info": "<input type='text' class='info' placeholder='Full Name' name='Name'/> <input type='email' class='info' placeholder='Email' name='Email' /> <input type='text' class='info' placeholder='Assunt' name='Assunt' />",
+        "message": " <textarea placeholder='Message' name='Message' cols='30' rows='7'></textarea>",
         "btnSubmit": "<input class='btn' type='submit' value='Submit'/>"
     }
 }
