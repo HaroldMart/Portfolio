@@ -1,0 +1,54 @@
+{
+    "navbar": {
+        "link1": "Home",
+        "link2": "About",
+        "link3": "Resume",
+        "link4": "Skills",
+        "link5": "Portfolio",
+        "link6": "Contact"
+    },
+    "hero": {
+        "name": "Hi, I'm Haroldy!!",
+        "description": "I'm Software Developer, passionate about programming and web development, come and check what I can do..",
+        "resume": "My resume",
+        "greeting1": "Developer",
+        "greeting2": "Player",
+        "greeting3": "Feelancer"
+    },
+    "about": {
+        "title": "About me",
+        "item1": "Dominican Republic, Santo Domingo",
+        "item2": "Spanish (Native), English (B1)",
+        "item3": "Software Development",
+        "item4": "Programming, Reading, Videogames"
+    },
+    "resume": {
+        "title": "Resume",
+        "education_title": "Education",
+        "education_course1": "Software Development",
+        "education_course2": "Frontend Development",
+        "education_date1": "Jan 2021 - Current",
+        "education_date2": "Jul 2022 - Nov 2022",
+        "education_description1": "I'm studying Software Development at Instituto Tecnologico de las Americas (ITLA), to obtain the necessary knowledge to program software in the most efficient way possible by applying best practices.",
+        "education_description2": "I took a course on the udemy platform on web development that gave me the skills to create web pages using HTML, CSS and JavaScript technologies.",
+        "experience_title": "Experience",
+        "experience_position1": "Developer",
+        "experience_position2": "Software Developer",
+        "experience_date1": "Jan 2023 - Actual",
+        "experience_date2": "Jun 2023 - Sep 2023",
+        "experience_description1": "I currently offer my services as a freelancer and maintain my path of constant learning.",
+        "experience_description2": "I did an internship at the BHD company where I learned about the work environment of a company, applying my knowledge and learning new technologies to gain experience."
+    },
+    "skills": {
+        "title": "Skills"
+    },
+    "portfolio": {
+        "title": "Portfolio"
+    },
+    "contact": {
+        "title": "Talk with me!",
+        "info": "<input type='text' class='info' placeholder='Full Name' name='Name' id='name'/> <input type='email' class='info' placeholder='Email' name='Email' id='email' /> <input type='text' class='info' placeholder='Assunt' name='Assunt' id='name' />",
+        "message": " <textarea placeholder='Message' name='Message' id='message' cols='30' rows='7'></textarea>",
+        "btnSubmit": "<input class='btn' type='submit' value='Submit'/>"
+    }
+}

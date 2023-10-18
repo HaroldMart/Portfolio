@@ -3,15 +3,15 @@ let education_container = document.querySelector(".education-list");
   const courses = [
       {
           place: "Instituto Tecnologico de las Americas",
-          course: "Software Development",
-          date: "Jan 2021 - Current",
-          description: "I'm studying Software Development at Instituto Tecnologico de las Americas (ITLA), to obtain the necessary knowledge to program software in the most efficient way possible by applying best practices."
+          course: "resume.education_course1",
+          date: "resume.education_date1",
+          description: "resume.education_description1"
       },
       {
         place: "Udemy",
-        course: "Frontend Development",
-        date: "Jul 2022 - Nov 2022",
-        description: " I took a course on the udemy platform on web development that gave me the skills to create web pages using HTML, CSS and JavaScript technologies."
+        course: "resume.education_course2",
+        date: "resume.education_date2",
+        description: "resume.education_description2"
       },
   ];
 
@@ -29,15 +29,13 @@ export default function education() {
           <span>${course.place}</span>
         </div>
         <div class="course">
-          <h5>${course.course}</h5>
+          <h5 class="lang" key="${course.course}"></h5>
         </div>
         <div class="date">
           <span class="icon"></span>
-          <span>${course.date}</span>
+          <span class="lang" key="${course.date}"></span>
         </div>
-        <p class="description">
-         ${course.description}
-        </p>
+        <p class="description lang" key="${course.description}"></p>
       `;
   
       education_container.appendChild(li);

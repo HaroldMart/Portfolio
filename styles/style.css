@@ -109,6 +109,18 @@ a {
   transform: scale(1.1);
 }
 
+.translate {
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(120, 120, 191);
+}
+.translate:hover {
+  transition: all 400ms;
+  transform: scale(0.96);
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -296,6 +308,7 @@ a {
 }
 .hero .content .description {
   color: #d9d9d9;
+  line-height: 25px;
   transition: all 600ms;
 }
 .hero .content .description:hover {
@@ -675,6 +688,7 @@ a {
   color: #afadad;
   font-size: 15px;
   border: none;
+  outline: none;
   padding: 20px;
   border-radius: 7px;
 }
@@ -682,7 +696,7 @@ a {
   resize: none;
   height: 210px;
 }
-.contact .content form .btn {
+.contact .content form .btn-container .btn {
   color: white;
   background-color: #1ee832;
   width: 125px;
@@ -690,7 +704,7 @@ a {
   font-weight: 600;
   transition: all 700ms;
 }
-.contact .content form .btn:hover {
+.contact .content form .btn-container .btn:hover {
   transform: scale(0.94);
 }
 .contact .content form .form-container {

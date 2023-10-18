@@ -133,6 +133,20 @@ a {
   }
 }
 
+.translate {
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+
+  background-color: rgb(120, 120, 191);
+
+  &:hover {
+    transition: all 400ms;
+    transform: scale(0.96);
+  }
+}
+
 // Navbar
 
 .navbar {
@@ -316,7 +330,7 @@ a {
 
     .description {
       color: map-get($colors, "grey");
-
+      line-height: 25px;
       transition: all 600ms;
 
       &:hover {
@@ -332,9 +346,9 @@ a {
       width: 100px;
       transition: all 700ms;
 
-        &:hover {
-          transform: scale(0.94);
-        }
+      &:hover {
+        transform: scale(0.94);
+      }
 
       a {
         font-weight: 300;
@@ -615,7 +629,6 @@ a {
       img {
         width: 85%;
       }
-
     }
   }
 }
@@ -691,6 +704,7 @@ a {
         color: #afadad;
         font-size: 15px;
         border: none;
+        outline: none;
         padding: 20px;
         border-radius: 7px;
       }
@@ -700,16 +714,18 @@ a {
         height: 210px;
       }
 
-      .btn {
-        color: white;
-        background-color: map-get($colors, "green");
-        width: 125px;
-        padding: 15px;
-        font-weight: 600;
-        transition: all 700ms;
+      .btn-container {
+        .btn {
+          color: white;
+          background-color: map-get($colors, "green");
+          width: 125px;
+          padding: 15px;
+          font-weight: 600;
+          transition: all 700ms;
 
-        &:hover {
-          transform: scale(0.94);
+          &:hover {
+            transform: scale(0.94);
+          }
         }
       }
 

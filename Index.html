@@ -18,12 +18,26 @@
       </a>
       <div class="nav-links">
         <ul>
-          <li><a class="link active" href="#home">Home</a></li>
-          <li><a class="link" href="#about">About</a></li>
-          <li><a class="link" href="#resume">Resume</a></li>
-          <li><a class="link" href="#skills">Skills</a></li>
-          <li><a class="link" href="#portfolio">Portfolio</a></li>
-          <li><a class="link" href="#contact">Contact</a></li>
+          <li>
+            <a class="link lang active" href="#home" key="navbar.link1">Home</a>
+          </li>
+          <li>
+            <a class="link lang" href="#about" key="navbar.link2">About</a>
+          </li>
+          <li>
+            <a class="link lang" href="#resume" key="navbar.link3">Resume</a>
+          </li>
+          <li>
+            <a class="link lang" href="#skills" key="navbar.link4">Skills</a>
+          </li>
+          <li>
+            <a class="link lang" href="#portfolio" key="navbar.link5"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a class="link lang" href="#contact" key="navbar.link6">Contact</a>
+          </li>
         </ul>
       </div>
       <img src="/assets/icons/menu-btn.png" alt="menu" class="menu" />
@@ -32,20 +46,31 @@
     <div class="section" id="home"></div>
     <header class="hero" data-aos="fade-down">
       <div class="content">
+        <div class="buttons">
+          <button class="translate" value="es" id="es">Es</button>
+          <button class="translate" value="en" id="en">En</button>
+        </div>
         <div class="greetings">
-          <h1 class="name">Hi, I'm Haroldy!!</h1>
+          <h1 class="name" key="hero.name">Hi, I'm Haroldy!!</h1>
           <ul class="list">
-            <li class="item greeting"><h1>Developer</h1></li>
-            <li class="item greeting"><h1>Player</h1></li>
-            <li class="item greeting"><h1>Feelancer</h1></li>
+            <li class="item greeting">
+              <h1 class="lang" key="hero.greeting1">Developer</h1>
+            </li>
+            <li class="item greeting">
+              <h1 class="lang" key="hero.greeting2">Player</h1>
+            </li>
+            <li class="item greeting">
+              <h1 class="lang" key="hero.greeting3">Feelancer</h1>
+            </li>
           </ul>
         </div>
-        <p class="description">
-          I'm Software Developer, passionate about programming and web
-          development, come and check what I can do..
-        </p>
+        <p class="description lang" key="hero.description"></p>
         <div class="resume-Button">
-          <a href="/assets/resume/resume.html">My Resume</a>
+          <a
+            href="/assets/resume/resume.html"
+            class="lang"
+            key="hero.resume"
+          ></a>
         </div>
       </div>
       <div class="image">
@@ -60,17 +85,18 @@
       </div>
       <div class="container">
         <div class="title">
-          <h2>About me</h2>
+          <h2 class="lang" key="about.title">About me</h2>
           <div class="divider"></div>
         </div>
-
         <div class="content">
           <ul class="items">
             <li class="item">
               <span class="icon">
                 <img src="/assets/icons/location.png" alt="" />
               </span>
-              <span>Dominican Republic, Santo Domingo</span>
+              <span class="lang" key="about.item1"
+                >Dominican Republic, Santo Domingo</span
+              >
             </li>
             <li class="item">
               <span class="icon">
@@ -82,7 +108,9 @@
               <span class="icon">
                 <img src="/assets/icons/languages.png" alt="" />
               </span>
-              <span>Spanish (Native), English (B1)</span>
+              <span class="lang" key="about.item2"
+                >Spanish (Native), English (B1)</span
+              >
             </li>
             <li class="item">
               <span class="icon">
@@ -94,13 +122,15 @@
               <span class="icon">
                 <img src="/assets/icons/career.png" alt="" />
               </span>
-              <span>Software Development</span>
+              <span class="lang" key="about.item3">Software Development</span>
             </li>
             <li class="item">
               <span class="icon">
                 <img src="/assets/icons/hobbies.png" alt="" />
               </span>
-              <span>Programming, Reading, Videogames</span>
+              <span class="lang" key="about.item4"
+                >Programming, Reading, Videogames</span
+              >
             </li>
           </ul>
           <div class="container-icons">
@@ -157,20 +187,20 @@
     <div class="section" id="resume"></div>
     <section class="resume" data-aos="fade-up-left">
       <div class="title">
-        <h2>Resume</h2>
+        <h2 class="lang" key="resume.title">Resume</h2>
         <div class="divider"></div>
       </div>
       <div class="content">
         <div class="education">
           <div class="title-content">
-            <h3>Education</h3>
+            <h3 class="lang" key="resume.education_title">Education</h3>
           </div>
           <ul class="list education-list"></ul>
         </div>
         <div class="divider-section"></div>
         <div class="experience">
           <div class="title-content">
-            <h3>Experience</h3>
+            <h3 class="lang" key="resume.experience_title">Experience</h3>
           </div>
           <ul class="list experience-list"></ul>
         </div>
@@ -180,7 +210,7 @@
     <div class="section" id="skills"></div>
     <section class="skills" data-aos="fade-down-right">
       <div class="title">
-        <h2>Skills</h2>
+        <h2 class="lang" key="skills.title">Skills</h2>
         <div class="divider"></div>
       </div>
       <div class="content skills-list"></div>
@@ -189,7 +219,7 @@
     <div class="section" id="portfolio"></div>
     <section class="portfolio" data-aos="fade-up-left">
       <div class="title">
-        <h2>Portfolio</h2>
+        <h2 class="lang" key="skills.title">Portfolio</h2>
         <div class="divider"></div>
       </div>
       <div class="content projects-container"></div>
@@ -198,13 +228,13 @@
     <div class="section" id="contact"></div>
     <section class="contact">
       <div class="title">
-        <h2>Talk with me!</h2>
+        <h2 class="lang" key="contact.title">Talk with me!</h2>
         <div class="divider"></div>
       </div>
       <div class="content">
         <form action="https://formspree.io/f/mrgwrqpa" method="post">
           <div class="form-container">
-            <div>
+            <div class="lang" key="contact.info">
               <input
                 type="text"
                 class="info"
@@ -228,7 +258,7 @@
               />
             </div>
 
-            <div>
+            <div class="lang" key="contact.message">
               <textarea
                 placeholder="Message"
                 name="Message"
@@ -266,7 +296,7 @@
               <img src="/assets/icons/linkedin.png" alt="" />
             </a>
           </div>
-          <input class="btn" type="submit" value="Submit" />
+          <div class="btn-container lang" key="contact.btnSubmit"></div>
         </form>
       </div>
     </section>

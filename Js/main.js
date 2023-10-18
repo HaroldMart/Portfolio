@@ -3,6 +3,7 @@ import experience from "./experience.js";
 import skills from "./skills.js";
 import projects from "./projects.js";
 
+const translates = document.querySelectorAll('.translate');
 const menuHamburger = document.querySelector(".menu");
 const navLinks = document.querySelector(".nav-links");
 
@@ -17,6 +18,7 @@ document.body.onload = function () {
     experience();
     skills();
     projects();
+    getLanguages();
 }
 
 function scrollSpy() {
@@ -41,3 +43,33 @@ window.onscroll = () => {
 }
 }
 
+function getLanguages() {
+    let lang = navigator.language;
+    let langs = lang.split('-');
+
+    fetch(`/assets/lang/${langs[0]}.json`)
+        .then(Response => Response.json())
+        .then(data => {
+            changeLang(data, langs[0]);
+        })
+}
+
+const changeLang = (data, lang) => {
+
+    const items = document.querySelectorAll('.lang');
+    items.forEach(item => {
+        let key = item.getAttribute('key');
+        let keys = key.split('.');
+        item.innerHTML = data[keys[0]][keys[1]];
+    });
+};
+
+translates.forEach(translate => {
+    translate.addEventListener('click', () => {
+        let lang = translate.getAttribute('value');
+
+        fetch(`/assets/lang/${lang}.json`)
+            .then(Response => Response.json())
+            .then(data => changeLang(data, lang))
+    });
+})

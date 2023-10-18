@@ -1,0 +1,54 @@
+{
+    "navbar": {
+        "link1": "Inicio",
+        "link2": "Sobre mi",
+        "link3": "Resumen",
+        "link4": "Habilidades",
+        "link5": "Portafolio",
+        "link6": "Contacto"
+    },
+    "hero": {
+        "name": "Hola, Soy Haroldy!!",
+        "description": "Soy programador, apasionado sobre la programación y el desarrollo web, ven y mira lo que puedo hacer. Vamoooosss!!!",
+        "resume": "Mi CV",
+        "greeting1": "Programador",
+        "greeting2": "Jugador",
+        "greeting3": "Feelancer"
+    },
+    "about": {
+        "title": "Sobre mi",
+        "item1": "Republica Dominicana, Santo Domingo",
+        "item2": "Español (Nativo), Inglés (B1)",
+        "item3": "Desarrollo de Software",
+        "item4": "Programación, Lectura, Videojuegos"
+    },
+    "resume": {
+        "title": "Resumen",
+        "education_title": "Educación",
+        "education_course1": "Desarrollo de Software",
+        "education_course2": "Desarrollo Frontend",
+        "education_date1": "Ener 2021 - Actual",
+        "education_date2": "Jul 2022 - Nov 2022",
+        "education_description1": "Estoy estudiando Desarrollo de Software en el Instituto Tecnológico de las Américas (ITLA), para obtener los conocimientos necesarios para programar software de la forma más eficiente posible aplicando mejores prácticas.",
+        "education_description2": "Tomé un curso en la plataforma udemy sobre desarrollo web que me dio las habilidades para crear páginas web utilizando tecnologías HTML, CSS y JavaScript.",
+        "experience_title": "Experiencia",
+        "experience_position1": "Desarrollador",
+        "experience_position2": "Desarrollador de Software",
+        "experience_date1": "Ener 2023 - Actual",
+        "experience_date2": "Jun 2023 - Sep 2023",
+        "experience_description1": "Actualmente ofrezco mis servicios como freelance y mantengo mi camino de constante aprendizaje.",
+        "experience_description2": "Realice una pasantía en la empresa BHD donde aprendi sobre el ambiente laboral de una empresa, aplicando mis conocimientos y aprendiendo nuevas tecnologías para adquirir experiencia."
+    },
+    "skills": {
+        "title": "Habilidades"
+    },
+    "portfolio": {
+        "title": "Portafolio"
+    },
+    "contact": {
+        "title": "Habla conmigo!",
+        "info": "<input type='text' class='info' placeholder='Nombre completo' name='Name' id='name'/> <input type='email' class='info' placeholder='Email' name='Email' id='email' /> <input type='text' class='info' placeholder='Asunto' name='Assunt' id='name' />",
+        "message": " <textarea placeholder='Mensaje' name='Message' id='message' cols='30' rows='7'></textarea>",
+        "btnSubmit": "<input class='btn' type='submit' value='Enviar'/>"
+    }
+}
