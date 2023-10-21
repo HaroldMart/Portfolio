@@ -545,10 +545,11 @@ a {
   }
 
   .content {
-    @include flex($justify: center, $space: 30px);
-
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    gap: 30px;
     @include mid-screen {
-      flex-wrap: wrap;
+      grid-template-columns: 1fr;
       gap: 80px;
       .divider-section {
         display: none;
@@ -672,9 +673,8 @@ a {
     }
 
     .divider-section {
-      width: 1px;
       background-color: rgb(127, 127, 127);
-      height: 550px;
+      height: 710px;
     }
   }
 }

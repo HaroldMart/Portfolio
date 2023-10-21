@@ -507,15 +507,13 @@ a {
   align-items: center;
 }
 .resume .content {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
   gap: 30px;
-  flex-wrap: nowrap;
 }
 @media (max-width: 750px) {
   .resume .content {
-    flex-wrap: wrap;
+    grid-template-columns: 1fr;
     gap: 80px;
   }
   .resume .content .divider-section {
@@ -638,9 +636,8 @@ a {
   margin-top: 20px;
 }
 .resume .content .divider-section {
-  width: 1px;
   background-color: rgb(127, 127, 127);
-  height: 550px;
+  height: 710px;
 }
 
 .skills {

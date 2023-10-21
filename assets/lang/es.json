@@ -27,17 +27,20 @@
         "education_title": "Educación",
         "education_course1": "Desarrollo de Software",
         "education_course2": "Desarrollo Frontend",
+        "education_course3": "Fundamentos del Computador",
         "education_date1": "Ener 2021 - Actual",
         "education_date2": "Jul 2022 - Nov 2022",
-        "education_description1": "Estoy estudiando Desarrollo de Software en el Instituto Tecnológico de las Américas (ITLA), para obtener los conocimientos necesarios para programar software de la forma más eficiente posible aplicando mejores prácticas.",
-        "education_description2": "Tomé un curso en la plataforma udemy sobre desarrollo web que me dio las habilidades para crear páginas web utilizando tecnologías HTML, CSS y JavaScript.",
+        "education_date3": "Ene 2021 - Abr 2021",
+        "education_description1": "Estudié desarrollo de software en el Instituto Tecnológico de las Américas (ITLA), donde pude obtener los conocimientos necesarios sobre tecnología y desarrollo de páginas y aplicaciones.",
+        "education_description2": "Realicé un curso en la plataforma virtual Udemy sobre desarrollo web donde aprendí las tecnologías HTML CSS y Javascript para poder trabajar en la creación de páginas web.",
+        "education_description3": "Realicé un curso en la plataforma virtual Cisco Netacad donde aprendí los fundamentos de las computadoras y su funcionamiento.",
         "experience_title": "Experiencia",
         "experience_position1": "Desarrollador",
         "experience_position2": "Desarrollador de Software",
         "experience_date1": "Ener 2023 - Actual",
         "experience_date2": "Jun 2023 - Sep 2023",
-        "experience_description1": "Actualmente ofrezco mis servicios como freelance y mantengo mi camino de constante aprendizaje.",
-        "experience_description2": "Realice una pasantía en la empresa BHD donde aprendi sobre el ambiente laboral de una empresa, aplicando mis conocimientos y aprendiendo nuevas tecnologías para adquirir experiencia."
+        "experience_description1": "He realizado algunos proyectos freelance, desde sitios web hasta aplicaciones móviles.",
+        "experience_description2": "Realicé una pasantía en la empresa BHD donde trabajé en conjunto con células ágiles encargadas de la transformación digital, donde pude contribuir a soluciones más amigables y ayudar con mejoras en el sistemas, trabajando bajo la metodología ágil SCRUM."
     },
     "skills": {
         "title": "Habilidades"

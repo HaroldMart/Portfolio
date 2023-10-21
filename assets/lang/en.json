@@ -27,17 +27,20 @@
         "education_title": "Education",
         "education_course1": "Software Development",
         "education_course2": "Frontend Development",
+        "education_course3": "IT Essentials",
         "education_date1": "Jan 2021 - Current",
         "education_date2": "Jul 2022 - Nov 2022",
-        "education_description1": "I'm studying Software Development at Instituto Tecnologico de las Americas (ITLA), to obtain the necessary knowledge to program software in the most efficient way possible by applying best practices.",
-        "education_description2": "I took a course on the udemy platform on web development that gave me the skills to create web pages using HTML, CSS and JavaScript technologies.",
+        "education_date3": "Ene 2021 - Abr 2021",
+        "education_description1": "I studied software development at the Technological Institute of the Americas (ITLA), where I was able to obtain the necessary knowledge about technology and development of pages and applications.",
+        "education_description2": "I took a course on the Udemy virtual platform on web development where I learned HTML CSS and Javascript technologies to be able to work on creating web pages.",
+        "education_description3": "I took a course on the Cisco Netacad virtual platform where I learned the fundamentals of computers and how they work.",
         "experience_title": "Experience",
         "experience_position1": "Developer",
         "experience_position2": "Software Developer",
         "experience_date1": "Jan 2023 - Actual",
         "experience_date2": "Jun 2023 - Sep 2023",
-        "experience_description1": "I currently offer my services as a freelancer and maintain my path of constant learning.",
-        "experience_description2": "I did an internship at the BHD company where I learned about the work environment of a company, applying my knowledge and learning new technologies to gain experience."
+        "experience_description1": "I have done some freelance projects, from websites to mobile applications.",
+        "experience_description2": "I did an internship at the BHD company where I worked together with agile cells in charge of digital transformation, where I was able to contribute to friendlier solutions and help with system improvements, working under the agile SCRUM methodology."
     },
     "skills": {
         "title": "Skills"

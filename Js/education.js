@@ -13,6 +13,12 @@ let education_container = document.querySelector(".education-list");
         date: "resume.education_date2",
         description: "resume.education_description2"
       },
+      {
+        place: "Cisco NETACAD",
+        course: "resume.education_course3",
+        date: "resume.education_date3",
+        description: "resume.education_description3"
+      },
   ];
 
 
