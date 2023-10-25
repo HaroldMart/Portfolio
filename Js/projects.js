@@ -31,6 +31,12 @@ let projects_container = document.querySelector(".projects-container");
             techs: "ASP .NET, Entity Framework, SQL Server",
             code_link: "https://github.com/HaroldMart/Pokedex",
         },
+        {
+          image: "/assets/images/rickyAndMortyImage.png",
+          name: "Ricky And Morty Website",
+          techs: "Sass, ASP .NET, Javascript, API",
+          code_link: "https://github.com/HaroldMart/RickyAndMortyApp",
+      },
     ];
 
 export default function projects() {
