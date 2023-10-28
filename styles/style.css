@@ -716,6 +716,7 @@ a {
   flex-wrap: nowrap;
   align-items: center;
   margin-bottom: 10px;
+  padding: 5px;
 }
 .portfolio .content .project .info h4 {
   margin-top: 25px;

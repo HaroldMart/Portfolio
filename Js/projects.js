@@ -34,7 +34,7 @@ let projects_container = document.querySelector(".projects-container");
         {
           image: "/assets/images/rickyAndMortyImage.png",
           name: "Ricky And Morty Website",
-          techs: "Sass, ASP .NET, Javascript, API",
+          techs: "Sass, ASP .NET, Javascript, API, Docker",
           code_link: "https://github.com/HaroldMart/RickyAndMortyApp",
       },
     ];
