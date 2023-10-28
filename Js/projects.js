@@ -16,7 +16,7 @@ let projects_container = document.querySelector(".projects-container");
         {
             image: "/assets/images/moviesOverviewImage.png",
             name: "Movies Overview",
-            techs: "HTML, CSS, JS",
+            techs: "HTML, CSS, JS, API",
             code_link: "https://github.com/HaroldMart/MoviesOverview",
         },
         {
