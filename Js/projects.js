@@ -2,12 +2,6 @@ let projects_container = document.querySelector(".projects-container");
     
     const works = [
         {
-            image: "/assets/images/controlEmpleadosImage.png",
-            name: "Employee Management",
-            techs: "HTML, CSS, PHP",
-            code_link: "https://github.com/HaroldMart/ControlDeEmpleados",
-        },
-        {
             image: "/assets/images/contackBook_Image.png",
             name: "Contact Book",
             techs: "HTML, CSS, JS",
@@ -36,6 +30,12 @@ let projects_container = document.querySelector(".projects-container");
           name: "Ricky And Morty Website",
           techs: "Sass, ASP .NET, Javascript, API, Docker",
           code_link: "https://github.com/HaroldMart/RickyAndMortyApp",
+      },
+      {
+          image: "/assets/images/EntertainHubAPI_Image.png",
+          name: "EntertainHub-API",
+          techs: "ASP Web API, Entity Framework, MYSQL",
+          code_link: "https://github.com/HaroldMart/EntertainHub-API#entertainhub-api",
       },
     ];
 
