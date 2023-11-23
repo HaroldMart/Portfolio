@@ -26,10 +26,6 @@ let skills_container = document.querySelector(".skills-list");
         name: "MongoDB",
       },
       {
-        icon: "/assets/icons/nodejs.svg",
-        name: "NodeJs",
-      },
-      {
         icon: "/assets/icons/sqlserver.svg",
         name: "SQL Server",
       },
