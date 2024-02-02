@@ -2,22 +2,28 @@ let education_container = document.querySelector(".education-list");
   
   const courses = [
       {
-          place: "Instituto Tecnologico de las Americas",
+          place: "Samsung Innovation Campus",
           course: "resume.education_course1",
           date: "resume.education_date1",
           description: "resume.education_description1"
       },
       {
-        place: "Udemy",
-        course: "resume.education_course2",
-        date: "resume.education_date2",
-        description: "resume.education_description2"
+          place: "Instituto Tecnologico de las Americas",
+          course: "resume.education_course2",
+          date: "resume.education_date2",
+          description: "resume.education_description2"
       },
       {
-        place: "Cisco NETACAD",
+        place: "Udemy",
         course: "resume.education_course3",
         date: "resume.education_date3",
         description: "resume.education_description3"
+      },
+      {
+        place: "Cisco NETACAD",
+        course: "resume.education_course4",
+        date: "resume.education_date4",
+        description: "resume.education_description4"
       },
   ];
 
