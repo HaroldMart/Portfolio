@@ -1,12 +1,12 @@
 let experience_container = document.querySelector(".experience-list");
   
   const experiences = [
-      {
-          place: "Freelancer",
-          position: "resume.experience_position1",
-          date: "resume.experience_date1",
-          description: "resume.experience_description1"
-      },
+      // {
+      //     place: "Freelancer",
+      //     position: "resume.experience_position1",
+      //     date: "resume.experience_date1",
+      //     description: "resume.experience_description1"
+      // },
       {
         place: "Banco BHD",
         position: "resume.experience_position2",
