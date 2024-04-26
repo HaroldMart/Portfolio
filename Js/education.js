@@ -1,12 +1,12 @@
 let education_container = document.querySelector(".education-list");
   
   const courses = [
-      {
-          place: "Samsung Innovation Campus",
-          course: "resume.education_course4",
-          date: "resume.education_date4",
-          description: "resume.education_description4"
-      },
+      // {
+      //     place: "Samsung Innovation Campus",
+      //     course: "resume.education_course4",
+      //     date: "resume.education_date4",
+      //     description: "resume.education_description4"
+      // },
       {
           place: "Instituto Tecnologico de las Americas",
           course: "resume.education_course1",
