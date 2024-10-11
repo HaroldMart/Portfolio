@@ -348,7 +348,7 @@ a {
   -webkit-text-fill-color: transparent;
   position: absolute;
   position: absolute;
-  animation: roll 9s ease 1s infinite backwards;
+  animation: roll 12s ease 1s infinite backwards;
 }
 .hero .content .greetings .list .item:nth-child(1) {
   animation-delay: 0s;
@@ -358,6 +358,9 @@ a {
 }
 .hero .content .greetings .list .item:nth-child(3) {
   animation-delay: 6s;
+}
+.hero .content .greetings .list .item:nth-child(4) {
+  animation-delay: 9s;
 }
 @media (max-width: 750px) {
   .hero .content .greetings .list .item {

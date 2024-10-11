@@ -41,6 +41,22 @@ let skills_container = document.querySelector(".skills-list");
         icon: "/assets/icons/mysql.svg",
         name: "MySQL",
       },
+      {
+        icon: "/assets/icons/postman.svg",
+        name: "Postman",
+      },
+      {
+        icon: "/assets/icons/python.svg",
+        name: "Python",
+      },
+      {
+        icon: "/assets/icons/jira.svg",
+        name: "JIRA",
+      },
+      {
+        icon: "/assets/icons/github.svg",
+        name: "GitHub",
+      },
   ];
 
 

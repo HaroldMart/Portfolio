@@ -8,6 +8,12 @@ let experience_container = document.querySelector(".experience-list");
       //     description: "resume.experience_description1"
       // },
       {
+        place: "Banco Popular Dominicano",
+        position: "resume.experience_position3",
+        date: "resume.experience_date3",
+        description: "resume.experience_description3"
+      },
+      {
         place: "Banco BHD",
         position: "resume.experience_position2",
         date: "resume.experience_date2",
