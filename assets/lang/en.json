@@ -9,11 +9,12 @@
     },
     "hero": {
         "name": "Hi, I'm Haroldy!!",
-        "description": "I'm Software Developer, passionate about programming and web development, come and check what I can do..",
+        "description": "I am a programmer and QA analyst, passionate about technology and programming, with a solid focus on software quality. Discover everything I can do! Let's go!",
         "resume": "My resume",
         "greeting1": "Developer",
-        "greeting2": "Player",
-        "greeting3": "Freelancer"
+        "greeting2": "QA Analyst",
+        "greeting3": "Freelancer",
+        "greeting4": "Player"
     },
     "about": {
         "title": "About me",
@@ -29,21 +30,24 @@
         "education_course2": "Frontend Development",
         "education_course3": "IT Essentials",
         "education_course4": "Python and Artificial Intelligence",
-        "education_date1": "Jan 2021 - Current",
+        "education_date1": "Jan 2021 - Dic 2023",
         "education_date2": "Jul 2022 - Nov 2022",
-        "education_date3": "Ene 2021 - Abr 2021",
-        "education_date4": "Ene 2024 - Actual",
+        "education_date3": "Jan 2021 - Abr 2021",
+        "education_date4": "Jan 2024 - Actual",
         "education_description1": "I studied software development at the Technological Institute of the Americas (ITLA), where I was able to obtain the necessary knowledge about technology and development of pages and applications.",
         "education_description2": "I took a course on the Udemy virtual platform on web development where I learned HTML CSS and Javascript technologies to be able to work on creating web pages.",
         "education_description3": "I took a course on the Cisco Netacad virtual platform where I learned the fundamentals of computers and how they work.",
         "education_description4": "I'm currently taking a Python and Artificial Intelligence course to learn the fundamentals of it, and learn more about the Python programming language.",
         "experience_title": "Experience",
         "experience_position1": "Developer",
-        "experience_position2": "Software Developer",
+        "experience_position2": "Software Developer Internship",
+        "experience_position3": "QA Analyst Internship",
         "experience_date1": "Jan 2023 - Actual",
         "experience_date2": "Jun 2023 - Sep 2023",
+        "experience_date3": "Apr 2024 - Oct 2024",
         "experience_description1": "I have done some freelance projects, from websites to mobile applications.",
-        "experience_description2": "I did an internship at the BHD company where I worked together with agile cells in charge of digital transformation, where I was able to contribute with improvements in the digital system, focused on the user, learning to work under the agile SCRUM methodology."
+        "experience_description2": "I did an internship at the BHD company where I worked together with agile cells in charge of digital transformation, where I was able to contribute with improvements in the digital system, focused on the user, learning to work under the agile SCRUM methodology.",
+        "experience_description3": "I completed an internship at Banco Popular Dominicano, where I worked with the Waterfall Methodology, using JIRA and Zephyr to manage tasks and tests. I created, documented, and executed test cases, ensuring software quality. Additionally, I developed test plans and used Microsoft Office tools to generate reports. I maintained effective communication with multidisciplinary teams, efficiently managing time to meet established deadlines."
     },
     "skills": {
         "title": "Skills"

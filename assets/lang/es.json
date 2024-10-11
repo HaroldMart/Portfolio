@@ -9,11 +9,12 @@
     },
     "hero": {
         "name": "Hola, Soy Haroldy!!",
-        "description": "Soy programador, apasionado sobre la programación y el desarrollo web, ven y mira lo que puedo hacer. Vamoooosss!!!",
+        "description": "Soy programador y analista QA, apasionado por la tecnología y la programación, con un enfoque sólido en la calidad del software. ¡Descubre todo lo que puedo hacer! ¡Vamos!",
         "resume": "Mi CV",
         "greeting1": "Programador",
-        "greeting2": "Jugador",
-        "greeting3": "Freelancer"
+        "greeting2": "Analista QA",
+        "greeting3": "Freelancer",
+        "greeting4": "Jugador"
     },
     "about": {
         "title": "Sobre mi",
@@ -29,7 +30,7 @@
         "education_course2": "Desarrollo Frontend",
         "education_course3": "Fundamentos del Computador",
         "education_course4": "Python e Inteligencia Artificial",
-        "education_date1": "Ener 2021 - Actual",
+        "education_date1": "Ener 2021 - Dic 2023",
         "education_date2": "Jul 2022 - Nov 2022",
         "education_date3": "Ene 2021 - Abr 2021",
         "education_date4": "Ene 2024 - Actual",
@@ -39,11 +40,14 @@
         "education_description4": "Actualmente estoy tomando un curso de Python e Inteligencia Artificial para aprender los fundamentos del mismo, y conocer más sobre el lenguaje de programación Python.",
         "experience_title": "Experiencia",
         "experience_position1": "Desarrollador",
-        "experience_position2": "Desarrollador de Software",
+        "experience_position2": "Pasantia Desarrollador de Software",
+        "experience_position3": "Pasantia Analista QA",
         "experience_date1": "Ener 2023 - Actual",
         "experience_date2": "Jun 2023 - Sep 2023",
+        "experience_date3": "Abr 2024 - Oct 2024",
         "experience_description1": "He realizado algunos proyectos freelance, desde sitios web hasta aplicaciones móviles.",
-        "experience_description2": "Realicé una pasantía en la empresa BHD donde trabajé en conjunto con células ágiles encargadas de la transformación digital, donde pude contribuir con mejoras en el sistema digital, enfocado en el usuario, aprendiendo a trabajar bajo la metodología ágil SCRUM."
+        "experience_description2": "Realicé una pasantía en la empresa BHD donde trabajé en conjunto con células ágiles encargadas de la transformación digital, donde pude contribuir con mejoras en el sistema digital, enfocado en el usuario, aprendiendo a trabajar bajo la metodología ágil SCRUM.",
+        "experience_description3": "Realicé una pasantia en la empresa Banco Popular Domincano en la cual trabajé con la Metodología Cascada, utilizando JIRA y Zephyr para gestionar tareas y pruebas. Creé, documenté y ejecuté casos de prueba, asegurando la calidad del software. Además, desarrollé planes de prueba y utilicé herramientas de Microsoft Office para generar informes. Mantuve una comunicación efectiva con equipos multidisciplinarios, gestionando el tiempo de forma eficiente para cumplir con los plazos establecidos."
     },
     "skills": {
         "title": "Habilidades"

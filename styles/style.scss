@@ -144,7 +144,6 @@ a {
   z-index: 2;
   backdrop-filter: blur(30px);
 
-
   .logo {
     width: 90px;
     transition: all 600ms;
@@ -379,7 +378,7 @@ a {
           -webkit-text-fill-color: transparent;
           position: absolute;
           position: absolute;
-          animation: roll 9s ease 1s infinite backwards;
+          animation: roll 12s ease 1s infinite backwards;
 
           &:nth-child(1) {
             animation-delay: 0s;
@@ -391,6 +390,10 @@ a {
 
           &:nth-child(3) {
             animation-delay: 6s;
+          }
+
+          &:nth-child(4) {
+            animation-delay: 9s;
           }
 
           @include mid-screen {
