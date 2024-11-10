@@ -23,8 +23,8 @@ body {
   color: white;
   background-color: #09111e;
   font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 300;
+  font-size: 15px;
+  font-weight: 200;
   letter-spacing: 1px;
 }
 @media (max-width: 750px) {
@@ -724,6 +724,10 @@ a {
 .portfolio .content .project .info h4 {
   margin-top: 25px;
   margin-bottom: 20px;
+}
+.portfolio .content .project .info .technologies {
+  font-size: small;
+  color: #d9d9d9;
 }
 
 .contact {
